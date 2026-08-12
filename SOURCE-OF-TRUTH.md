@@ -12,4 +12,10 @@ This private repository is the durable implementation and delivery record for Ma
 
 ## Current gate
 
-Antonio reviews the local build before anything is shared or launched. The two exact ICMA-approved PNG lockups are still missing from Drive.
+Antonio reviews the current build before anything is shared or launched. The exact ICMA-approved PNG lockups were recovered from the approval email, added to the site, and committed on `main`.
+
+## Continuity
+
+- `PROJECT-TRACKER.md` is the concise current-state, next-action, waiting-on, and approval-gate register.
+- Update it whenever project status materially changes so the private repository remains recoverable without the Mac Mini.
+- Keep private legal material, credentials, and raw sensitive client records out of GitHub.
