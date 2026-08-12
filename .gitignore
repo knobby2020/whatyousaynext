@@ -1,0 +1,6 @@
+.DS_Store
+**/__pycache__/
+*.pyc
+*.zip
+site-mockup/site/evidence/
+drive-assets/

@@ -1,0 +1,880 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Matthew Johnson helps leaders build better conversations, navigate conflict, and lead without losing trust, talent, or purpose." />
+  <meta name="theme-color" content="#1f1f1f" />
+  <title>Matthew Johnson | What You Say Next</title>
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/apple-touch-icon.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@500;600;700;800&display=swap" />
+  <script>
+    /* Only gate content visibility behind CSS when JS can actually reveal it again. */
+    if ('IntersectionObserver' in window && 'classList' in document.documentElement) {
+      document.documentElement.classList.add('js-anim');
+    }
+  </script>
+  <style>
+    :root {
+      --ink: #1f1f1f;
+      --ink-2: #292929;
+      --paper: #f5f3ef;
+      --paper-2: #ebe7df;
+      --white: #ffffff;
+      --gold: #e4571e;
+      --gold-deep: #b53d0e;
+      --on-gold: #171310;            /* 4.85:1 on --gold */
+      --teal: #b53d0e;
+      --muted: #68635f;
+      --line: rgba(31, 31, 31, .16);
+
+      /* ---- width system ---- */
+      --max: 1360px;
+      --gutter: clamp(20px, 3.2vw, 56px);
+      --measure: 58ch;               /* long-form body copy */
+      --measure-sm: 46ch;            /* supporting / deck copy */
+
+      /* ---- shared grid + rhythm tokens ---- */
+      --split-a: minmax(0, .84fr) minmax(0, 1.16fr);   /* section head / body */
+      --split-b: minmax(0, .92fr) minmax(0, 1.08fr);   /* media / copy */
+      --gap-col: clamp(36px, 4.6vw, 88px);
+      --gap-head: clamp(32px, 3.6vw, 56px);
+      --section-y: clamp(76px, 7.6vw, 120px);
+      --header-h: 88px;
+      --focus: #ffb98f;
+    }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; -webkit-text-size-adjust: 100%; }
+    body {
+      margin: 0;
+      background: var(--paper);
+      color: var(--ink);
+      overflow-x: hidden;
+      font-family: Montserrat, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      -webkit-font-smoothing: antialiased;
+    }
+    img { display: block; max-width: 100%; }
+    a { color: inherit; }
+    button, a { -webkit-tap-highlight-color: transparent; }
+    section[id], main[id] { scroll-margin-top: calc(var(--header-h) + 8px); }
+    .shell { width: min(calc(100% - (var(--gutter) * 2)), var(--max)); margin-inline: auto; }
+
+    /* ---------- Focus visibility ---------- */
+    :focus-visible { outline: 3px solid var(--gold-deep); outline-offset: 3px; }
+    header :focus-visible,
+    .hero :focus-visible,
+    .topics :focus-visible,
+    .credential :focus-visible,
+    footer :focus-visible { outline-color: var(--focus); }
+    .cta :focus-visible { outline-color: var(--on-gold); }
+    .skip {
+      position: absolute; left: -9999px; top: 0; z-index: 60;
+      padding: 14px 20px; background: var(--white); color: var(--ink);
+      font-size: 13px; font-weight: 800; letter-spacing: .06em; text-transform: uppercase; text-decoration: none;
+    }
+    .skip:focus { left: 12px; top: 12px; }
+
+    .eyebrow {
+      display: flex; align-items: center; gap: 12px;
+      margin: 0 0 18px; color: var(--teal); font-size: 12px;
+      font-weight: 800; letter-spacing: .15em; text-transform: uppercase;
+    }
+    .eyebrow::before { content: ""; flex: 0 0 30px; height: 2px; background: currentColor; }
+    h1, h2, .display {
+      font-family: "Bebas Neue", "Arial Narrow", Impact, sans-serif;
+      font-weight: 400; letter-spacing: .005em; line-height: .91;
+    }
+    h1, h2, h3 { overflow-wrap: normal; word-break: normal; hyphens: manual; }
+    h1 { margin: 0; font-size: clamp(52px, 6.4vw, 104px); max-width: 20ch; }
+    h2 { margin: 0; font-size: clamp(40px, 4.4vw, 70px); text-wrap: balance; }
+    p { line-height: 1.7; }
+    .button {
+      display: inline-flex; min-height: 54px; align-items: center; justify-content: center;
+      gap: 10px; padding: 0 24px; border: 1px solid var(--ink); background: var(--ink);
+      color: var(--white); text-decoration: none; font-size: 13px; font-weight: 800;
+      letter-spacing: .06em; text-transform: uppercase; transition: transform .2s ease, background .2s ease;
+    }
+    .button:hover { transform: translateY(-2px); background: var(--ink-2); }
+    .button.secondary { color: var(--ink); background: transparent; }
+    .button.secondary:hover { background: var(--paper-2); }
+    .button.gold { background: var(--gold); color: var(--on-gold); border-color: var(--gold); }
+    .button.gold:hover { background: #f0662d; }
+    .button.on-gold { background: var(--ink); color: var(--white); border-color: var(--ink); }
+
+    /* ---------- Official reversed horizontal brand lockup ---------- */
+    .brand {
+      display: inline-flex; align-items: center; gap: 12px;
+      text-decoration: none; color: #f4f1ed;
+      --mark-size: 48px;
+      --brand-type: 20px;
+    }
+    .brand-mark { flex: 0 0 auto; width: var(--mark-size); height: var(--mark-size); }
+    .brand-mark img { display: block; width: 100%; height: 100%; object-fit: contain; }
+    .brand-copy { display: grid; gap: 4px; }
+    .brand-name {
+      font-family: "Bebas Neue", "Arial Narrow", Impact, sans-serif; font-weight: 400;
+      font-size: var(--brand-type); line-height: 1;
+      letter-spacing: .045em; text-transform: uppercase; white-space: nowrap;
+    }
+    .brand-name em { color: var(--gold); font-style: normal; }
+    .brand-tagline {
+      color: #f0f0ee; font-size: 7px; line-height: 1; font-weight: 800;
+      letter-spacing: .22em; text-transform: uppercase; white-space: nowrap;
+    }
+    .brand:hover .brand-name em { color: #ff7a42; }
+
+    header {
+      position: absolute; z-index: 10; inset: 0 0 auto; height: var(--header-h);
+      display: flex; align-items: center; color: var(--white);
+    }
+    header .shell { display: flex; align-items: center; justify-content: space-between; gap: 24px; }
+    nav { display: flex; align-items: center; gap: clamp(18px, 2vw, 34px); }
+    nav a:not(.nav-cta) { display: inline-flex; align-items: center; min-height: 44px; color: #dfe6e7; text-decoration: none; font-size: 13px; font-weight: 700; }
+    nav a:not(.nav-cta):hover { color: var(--gold); }
+    .nav-cta { border: 1px solid rgba(255,255,255,.42); padding: 13px 18px; text-decoration: none; font-size: 12px; font-weight: 800; text-transform: uppercase; letter-spacing: .08em; }
+    .nav-cta:hover { background: var(--gold); border-color: var(--gold); color: var(--on-gold); }
+    .menu {
+      display: none; align-items: center; justify-content: center; gap: 8px;
+      min-width: 52px; min-height: 44px; padding: 0 12px;
+      border: 1px solid rgba(255,255,255,.55); background: none; color: var(--white);
+      font-family: inherit; font-size: 11px; font-weight: 800; letter-spacing: .1em; text-transform: uppercase;
+      cursor: pointer;
+    }
+
+    .hero {
+      position: relative; overflow: hidden;
+      min-height: clamp(660px, 88svh, 900px); padding: calc(var(--header-h) + 56px) 0 clamp(60px, 6vw, 96px);
+      display: flex; align-items: flex-end; color: var(--white); background: var(--ink);
+      isolation: isolate;
+    }
+    .hero-media {
+      position: absolute; z-index: 0; inset: 0; width: 100%; height: 100%;
+      object-fit: cover; object-position: 62% 42%; filter: saturate(.96) contrast(1.03);
+      --hero-shift: 0px;
+      transform: translate3d(0, var(--hero-shift), 0) scale(1.015);
+      will-change: transform;
+    }
+    .hero::before {
+      content: ""; position: absolute; z-index: 1; inset: 0;
+      background:
+        linear-gradient(90deg, rgba(18,18,18,.99) 0%, rgba(18,18,18,.94) 34%, rgba(18,18,18,.5) 60%, rgba(18,18,18,.06) 100%),
+        linear-gradient(0deg, rgba(18,18,18,.78) 0%, transparent 44%);
+    }
+    .hero::after {
+      content: ""; position: absolute; z-index: 1; inset: 0;
+      background: linear-gradient(90deg, transparent calc(50% - 1px), rgba(255,255,255,.13) 50%, transparent calc(50% + 1px));
+      opacity: .4;
+    }
+    .hero-grid { position: relative; z-index: 2; display: block; }
+    .hero-copy { max-width: min(62%, 700px); }
+    .hero .eyebrow { color: var(--gold); }
+    .eyebrow-mobile { display: none; }
+    .hero-thesis {
+      margin: 16px 0 0; max-width: 9.5ch; color: var(--gold);
+      font-family: "Bebas Neue", "Arial Narrow", Impact, sans-serif;
+      font-size: clamp(54px, 6.4vw, 100px); line-height: .89; letter-spacing: .005em; text-transform: uppercase;
+    }
+    .hero-lede { margin: 28px 0 32px; color: #e1e7e8; font-size: clamp(17px, 1.3vw, 20px); max-width: 52ch; }
+    .hero-actions { display: flex; gap: 12px; flex-wrap: wrap; }
+    .hero .button.secondary { border-color: rgba(255,255,255,.38); color: white; }
+    .hero-identity {
+      display: flex; align-items: center; gap: 14px; margin-top: clamp(28px, 3vw, 46px); color: #d8e0e2;
+      font-size: 12px; font-weight: 700; letter-spacing: .08em; text-transform: uppercase;
+    }
+    .hero-identity::before { content: ""; flex: 0 0 46px; height: 1px; background: var(--gold); }
+    .hero-nameplate {
+      position: absolute; z-index: 3; right: var(--gutter); bottom: 38px;
+      display: grid; justify-items: end; text-align: right; color: white;
+      text-shadow: 0 3px 24px rgba(0,0,0,.78);
+    }
+    .hero-nameplate strong {
+      font-family: "Bebas Neue", "Arial Narrow", Impact, sans-serif; font-size: clamp(38px, 4vw, 62px);
+      font-weight: 400; line-height: .86; letter-spacing: .015em; text-transform: uppercase;
+    }
+    .hero-nameplate span {
+      display: flex; align-items: center; gap: 10px; margin-top: 10px; color: #f3b49a;
+      font-size: 9px; font-weight: 800; letter-spacing: .18em; text-transform: uppercase;
+    }
+    .hero-nameplate span::before { content: ""; width: 32px; height: 1px; background: var(--gold); }
+    .hero-foot {
+      position: absolute; z-index: 3; bottom: 26px; left: 0; right: 0;
+      color: #a8b8bd; font-size: 11px; letter-spacing: .14em; text-transform: uppercase;
+    }
+
+    .proof { padding: 36px 0; background: var(--white); border-bottom: 1px solid var(--line); }
+    .proof .shell { display: grid; grid-template-columns: var(--split-a); align-items: center; gap: var(--gap-col); }
+    .proof-label { font-size: 11px; line-height: 1.55; letter-spacing: .12em; text-transform: uppercase; color: var(--muted); }
+    .logos { display: grid; grid-template-columns: repeat(4, minmax(0,1fr)); gap: clamp(24px, 3vw, 46px); align-items: center; }
+    .logos img { max-height: 42px; max-width: 132px; margin: auto; filter: grayscale(1); opacity: .67; }
+
+    section { padding: var(--section-y) 0; }
+
+    /* Shared two-column grids so every section sits on the same rails. */
+    .split-a { display: grid; grid-template-columns: var(--split-a); gap: var(--gap-col); }
+    .split-b { display: grid; grid-template-columns: var(--split-b); gap: var(--gap-col); align-items: center; }
+    .section-head { align-self: start; }
+    .section-head h2 { max-width: 20ch; }
+
+    .intro-copy { padding-top: clamp(0px, 3.4vw, 56px); max-width: var(--measure); }
+    .intro-copy > p { margin: 0 0 22px; font-size: clamp(17px, 1.15vw, 18px); color: #37444d; }
+    .pull-line { margin-top: clamp(30px, 3.2vw, 44px); padding-left: 28px; border-left: 3px solid var(--gold); font-family: "Bebas Neue", "Arial Narrow", Impact, sans-serif; font-size: clamp(26px, 2.3vw, 32px); letter-spacing: .02em; line-height: 1.15; }
+
+    .topics { background: var(--ink); color: var(--white); }
+    .topics-head { margin-bottom: var(--gap-head); align-items: end; }
+    .topics-head > p { max-width: var(--measure-sm); color: #b8c4c8; margin: 0; align-self: end; }
+    .topic-list { border-top: 1px solid rgba(255,255,255,.18); }
+    .topic {
+      display: grid; grid-template-columns: 92px minmax(0, 1fr) minmax(0, .72fr); gap: clamp(20px, 2.6vw, 40px); align-items: center;
+      padding: clamp(28px, 2.6vw, 38px) 0; border-bottom: 1px solid rgba(255,255,255,.18);
+    }
+    .topic-num { color: var(--gold); font-family: "Bebas Neue", "Arial Narrow", Impact, sans-serif; font-size: 21px; }
+    .topic h3 { margin: 0; font-family: "Bebas Neue", "Arial Narrow", Impact, sans-serif; font-size: clamp(31px, 3.1vw, 48px); font-weight: 400; letter-spacing: .01em; }
+    .topic p { margin: 0; max-width: 44ch; color: #b3c0c4; font-size: 14px; }
+
+    /* ---------- The method sequence: one rule, three beats ---------- */
+    .arc { background: var(--white); }
+    .arc-head { margin-bottom: clamp(38px, 4vw, 62px); align-items: end; }
+    .arc-head > p { margin: 0; max-width: var(--measure-sm); color: #4c5860; font-size: clamp(16px, 1.15vw, 17px); align-self: end; }
+    .arc-track {
+      --arc-pad: clamp(28px, 3vw, 44px);
+      --arc-indent: 26px;
+      position: relative; display: grid; grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: clamp(28px, 3.4vw, 64px); margin: 0; padding: var(--arc-pad) 0 0;
+      list-style: none; border-top: 1px solid var(--line);
+    }
+    /* The rule is the whole mechanism: it draws once, and the beats land on it. */
+    .arc-track::after {
+      content: ""; position: absolute; top: -1px; left: 0; right: 0; height: 2px;
+      background: var(--gold); transform-origin: left center;
+    }
+    .arc-stage { position: relative; }
+    .arc-stage::before {
+      content: ""; position: absolute; left: 0; top: calc((var(--arc-pad) + 4px) * -1);
+      width: 8px; height: 8px; background: var(--gold); border: 1px solid var(--gold);
+    }
+    .arc-index {
+      display: block; margin-bottom: 12px; color: var(--teal);
+      font-family: "Bebas Neue", "Arial Narrow", Impact, sans-serif; font-size: 20px; letter-spacing: .1em;
+    }
+    .arc-stage h3 {
+      margin: 0; font-family: "Bebas Neue", "Arial Narrow", Impact, sans-serif;
+      font-size: clamp(28px, 3.2vw, 44px); font-weight: 400; letter-spacing: .01em; line-height: .95;
+    }
+    .arc-stage:last-child h3 { color: var(--gold-deep); }
+    .arc-stage p { margin: 14px 0 0; max-width: 34ch; color: #4c5860; font-size: 15px; line-height: 1.65; }
+
+    .book { overflow: hidden; background: var(--paper-2); }
+    /* Aspect-driven art board: the cover and the disc are sized off the board,
+       so neither can clip or spill into the copy column at any width. */
+    .book-visual { position: relative; width: min(100%, 460px); margin-inline: auto; aspect-ratio: 4 / 5; }
+    .book-cover {
+      position: absolute; z-index: 2; width: 72%; height: auto;
+      top: 5%; left: 14%; box-shadow: 20px 28px 46px rgba(11,23,35,.26); transform: rotate(-2deg);
+    }
+    .book-visual::before { content:""; position:absolute; z-index: 0; width: 76%; aspect-ratio: 1; border-radius: 50%; background: var(--gold); top: 14%; left: 0; }
+    .book-visual::after { content:""; position:absolute; z-index: 1; width: 34%; aspect-ratio: .78; border: 1px solid var(--gold); right: 0; bottom: 3%; }
+    .book-copy h2 { margin-bottom: 24px; }
+    .book-copy p { color: #39464e; font-size: clamp(16px, 1.15vw, 17px); max-width: var(--measure); }
+    .book-points { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 18px; margin: clamp(28px, 2.8vw, 40px) 0; max-width: 780px; }
+    .book-point { border-top: 2px solid var(--ink); padding-top: 15px; font-size: 13px; line-height: 1.45; font-weight: 700; }
+
+    .experience { padding-bottom: 0; background: var(--white); }
+    .experience-head { margin-bottom: var(--gap-head); }
+    .experience-head > p { max-width: var(--measure-sm); color: #4c5860; font-size: clamp(16px, 1.15vw, 17px); align-self: end; margin: 0; }
+    .photo-strip { display: grid; grid-template-columns: 1.3fr .7fr; min-height: clamp(420px, 40vw, 600px); background: var(--ink); }
+    .photo-strip img { width: 100%; height: 100%; object-fit: cover; }
+    .photo-main { object-position: 58% center; }
+    .photo-side { object-position: center 28%; filter: saturate(.82); }
+
+    .credential { background: #111; color: white; }
+    .credential-image { position: relative; }
+    .credential-image img:first-child { width: 100%; aspect-ratio: 1.42; object-fit: cover; object-position: center; filter: saturate(.85) contrast(1.03); }
+    /* Badge is inset, so it stays fully inside the photo at every width. */
+    .credential-badge {
+      position: absolute; width: clamp(80px, 8.4vw, 122px);
+      right: clamp(12px, 1.8vw, 22px); bottom: clamp(12px, 1.8vw, 22px);
+      background: #111; border-radius: 50%; box-shadow: 0 14px 30px rgba(0,0,0,.4);
+    }
+    .credential-copy { max-width: var(--measure); }
+    .credential-copy p { color: #cfcac6; font-size: clamp(16px, 1.15vw, 17px); }
+
+    .events { background: var(--paper); }
+    .events-head { margin-bottom: var(--gap-head); align-items: end; }
+    .events-head > p { margin: 0; max-width: var(--measure-sm); color: #4c5860; }
+    .event-list { border-top: 1px solid var(--line); }
+    .event {
+      display: grid; grid-template-columns: 150px minmax(0, 1fr) minmax(150px, .42fr); gap: clamp(20px, 3vw, 44px);
+      align-items: center; padding: clamp(24px, 2.4vw, 34px) 0; border-bottom: 1px solid var(--line);
+    }
+    .event-date { color: var(--teal); font-size: 12px; font-weight: 800; letter-spacing: .11em; text-transform: uppercase; }
+    .event h3 { margin: 0 0 6px; font-size: clamp(18px, 1.6vw, 23px); }
+    .event p { margin: 0; color: var(--muted); font-size: 14px; line-height: 1.55; }
+    .event-status { justify-self: end; color: var(--muted); font-size: 11px; font-weight: 800; letter-spacing: .11em; text-transform: uppercase; }
+    .event-status.upcoming { padding: 9px 12px; background: var(--gold); color: var(--on-gold); }
+
+    .resources { background: var(--white); }
+    .resource-list { border-top: 1px solid var(--line); }
+    .resource {
+      display: grid; grid-template-columns: 130px minmax(0, 1fr); gap: 28px; align-items: baseline;
+      padding: clamp(22px, 2vw, 28px) 0; border-bottom: 1px solid var(--line);
+      text-decoration: none; transition: color .2s ease;
+    }
+    .resource:hover { color: var(--teal); }
+    .resource span { color: var(--teal); font-size: 11px; font-weight: 800; letter-spacing: .12em; text-transform: uppercase; }
+    .resource strong { font-family: Montserrat, sans-serif; font-size: clamp(18px, 1.5vw, 22px); font-weight: 700; }
+    .newsletter {
+      margin-top: clamp(32px, 4vw, 52px); padding: clamp(24px, 3vw, 38px);
+      background: var(--paper-2); border-left: 4px solid var(--gold);
+    }
+    .newsletter h3 { margin: 0 0 8px; font-family: "Bebas Neue", "Arial Narrow", Impact, sans-serif; font-size: clamp(27px, 2.5vw, 36px); font-weight: 400; }
+    .newsletter p { margin: 0 0 20px; max-width: 54ch; color: #4c5860; font-size: 14px; }
+    .signup { display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: 10px; }
+    .signup label { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); }
+    .signup input[type="email"] {
+      min-width: 0; min-height: 54px; padding: 0 16px; border: 1px solid rgba(31,31,31,.34); background: var(--white);
+      color: var(--ink); font: 600 15px Montserrat, sans-serif;
+    }
+    .signup button { cursor: pointer; }
+
+    .cta { padding: calc(var(--section-y) * 1.06) 0; background: var(--gold); color: var(--on-gold); text-align: center; }
+    .cta .eyebrow { justify-content: center; color: var(--on-gold); }
+    .cta h2 { max-width: 24ch; margin: 0 auto 26px; }
+    .cta p { max-width: 62ch; margin: 0 auto 32px; color: var(--on-gold); font-size: clamp(16px, 1.15vw, 17px); }
+
+    footer { padding: clamp(38px, 4vw, 52px) 0; background: #111; color: #c2bdb9; }
+    footer .shell { display: flex; justify-content: space-between; align-items: center; gap: 28px; }
+    footer .brand { --mark-size: 42px; --brand-type: 18px; }
+    footer p { margin: 0; font-size: 12px; }
+
+    /* ---------- Premium motion: restrained, spatial, and reversible ---------- */
+    .js-anim .reveal { opacity: 0; filter: blur(3px); transform: translateY(26px); transition: opacity .85s cubic-bezier(.22,1,.36,1), filter .85s ease, transform .85s cubic-bezier(.22,1,.36,1); }
+    .js-anim .reveal.is-visible { opacity: 1; filter: none; transform: none; }
+    .js-anim header { opacity: 0; transform: translateY(-14px); }
+    .js-anim.motion-ready header { animation: header-in .8s .08s cubic-bezier(.22,1,.36,1) forwards; }
+    .js-anim .hero-copy > *, .js-anim .hero-nameplate { opacity: 0; transform: translateY(22px); }
+    .js-anim.motion-ready .hero-copy > * { animation: hero-copy-in .9s cubic-bezier(.22,1,.36,1) forwards; }
+    .js-anim.motion-ready .hero-copy > *:nth-child(1) { animation-delay: .18s; }
+    .js-anim.motion-ready .hero-copy > *:nth-child(2) { animation-delay: .28s; }
+    .js-anim.motion-ready .hero-copy > *:nth-child(3) { animation-delay: .39s; }
+    .js-anim.motion-ready .hero-copy > *:nth-child(4) { animation-delay: .5s; }
+    .js-anim.motion-ready .hero-copy > *:nth-child(5) { animation-delay: .6s; }
+    .js-anim.motion-ready .hero-nameplate { animation: hero-copy-in .9s .68s cubic-bezier(.22,1,.36,1) forwards; }
+    .js-anim.motion-ready .hero-media { animation: hero-image-in 1.6s cubic-bezier(.22,1,.36,1) both; }
+    @keyframes header-in { to { opacity: 1; transform: none; } }
+    @keyframes hero-copy-in { to { opacity: 1; transform: none; } }
+    @keyframes hero-image-in {
+      from { opacity: .5; transform: translate3d(0, var(--hero-shift), 0) scale(1.055); }
+      to { opacity: 1; transform: translate3d(0, var(--hero-shift), 0) scale(1.015); }
+    }
+    /* Sequence motion is scoped to the arc, so the shared .reveal never double-animates it. */
+    .js-anim .arc-track.reveal { opacity: 1; filter: none; transform: none; transition: none; }
+    .arc-stage:nth-child(1) { --arc-delay: .08s; }
+    .arc-stage:nth-child(2) { --arc-delay: .24s; }
+    .arc-stage:nth-child(3) { --arc-delay: .4s; }
+    .js-anim .arc-track::after { transform: scaleX(0); transition: transform 1.25s .05s cubic-bezier(.22,1,.36,1); }
+    .js-anim .arc-track.is-visible::after { transform: scaleX(1); }
+    .js-anim .arc-stage {
+      opacity: 0; transform: translateY(18px);
+      transition: opacity .7s var(--arc-delay) cubic-bezier(.22,1,.36,1), transform .7s var(--arc-delay) cubic-bezier(.22,1,.36,1);
+    }
+    .js-anim .arc-track.is-visible .arc-stage { opacity: 1; transform: none; }
+    .js-anim .arc-stage::before {
+      background: var(--white); border-color: rgba(31,31,31,.34);
+      transition: background .45s calc(var(--arc-delay) + .2s) ease, border-color .45s calc(var(--arc-delay) + .2s) ease;
+    }
+    .js-anim .arc-track.is-visible .arc-stage::before { background: var(--gold); border-color: var(--gold); }
+
+    @media (hover: hover) and (pointer: fine) {
+      .topic { transition: background .35s ease, padding-inline .35s cubic-bezier(.22,1,.36,1); }
+      .topic h3 { transition: color .3s ease, transform .35s cubic-bezier(.22,1,.36,1); }
+      .topic:hover { padding-inline: 14px; background: rgba(255,255,255,.035); }
+      .topic:hover h3 { color: #ff7040; transform: translateX(6px); }
+      .credential-image { overflow: hidden; }
+      .credential-image img:first-child { transition: transform 1.1s cubic-bezier(.22,1,.36,1), filter .8s ease; }
+      .credential-image:hover img:first-child { transform: scale(1.018); filter: saturate(.95) contrast(1.04); }
+    }
+
+    /* ---------- Tablet / small laptop ---------- */
+    @media (max-width: 1080px) {
+      :root { --split-a: minmax(0, .9fr) minmax(0, 1.1fr); --split-b: minmax(0, .96fr) minmax(0, 1.04fr); }
+      .topic { grid-template-columns: 74px minmax(0, 1fr) minmax(0, .8fr); }
+      .resource { grid-template-columns: 108px minmax(0, 1fr); gap: 20px; }
+    }
+
+    @media (max-width: 900px) {
+      :root { --header-h: 72px; --section-y: clamp(64px, 8vw, 92px); }
+      .brand { --mark-size: 40px; --brand-type: 17px; }
+      .menu { display: inline-flex; }
+      nav {
+        display: none; position: absolute; left: var(--gutter); right: var(--gutter); top: calc(var(--header-h) - 6px);
+        padding: 14px; background: var(--ink-2); flex-direction: column; align-items: stretch; gap: 0;
+        box-shadow: 0 22px 40px rgba(0,0,0,.34);
+      }
+      nav.open { display: flex; }
+      nav a:not(.nav-cta) { padding: 15px 8px; border-bottom: 1px solid rgba(255,255,255,.12); font-size: 15px; }
+      nav .nav-cta { margin-top: 14px; padding: 16px; text-align: center; }
+      .hero { min-height: clamp(600px, 86svh, 760px); padding: calc(var(--header-h) + 40px) 0 clamp(48px, 7vw, 72px); }
+      .hero-copy { max-width: 60%; }
+      .hero-media { object-position: 61% center; }
+      .hero::before { background: linear-gradient(90deg, rgba(18,18,18,.96) 0%, rgba(18,18,18,.76) 60%, rgba(18,18,18,.28) 100%), linear-gradient(0deg, rgba(18,18,18,.86), transparent 58%); }
+      .hero-nameplate { right: var(--gutter); bottom: 28px; }
+      .hero-foot { display: none; }
+      .split-a, .split-b, .proof .shell { grid-template-columns: minmax(0, 1fr); gap: clamp(26px, 5vw, 40px); }
+      .proof-label { text-align: center; }
+      .intro-copy { padding-top: 0; max-width: 100%; }
+      .credential-copy { max-width: 100%; }
+      .topics-head > p, .experience-head > p { max-width: 100%; }
+      .topic { grid-template-columns: 46px minmax(0, 1fr); gap: 4px 18px; }
+      .topic p { grid-column: 2; max-width: 100%; margin-top: 10px; }
+      /* Phone/tablet: the rule stands up and becomes a spine down the left edge. */
+      .arc-head { align-items: start; }
+      .arc-head > p { max-width: 100%; }
+      .arc-track {
+        grid-template-columns: minmax(0, 1fr); gap: clamp(30px, 5vw, 42px);
+        padding: 0 0 0 var(--arc-indent); border-top: 0;
+      }
+      .arc-track::before { content: ""; position: absolute; left: 3px; top: 4px; bottom: 8px; width: 2px; background: var(--line); }
+      .arc-track::after { top: 4px; bottom: 8px; left: 3px; right: auto; width: 2px; height: auto; transform-origin: center top; }
+      .js-anim .arc-track::after { transform: scaleY(0); }
+      .js-anim .arc-track.is-visible::after { transform: scaleY(1); }
+      .arc-stage::before { top: 4px; left: calc(var(--arc-indent) * -1); }
+      .arc-stage p { max-width: 100%; }
+      .book-visual { order: 2; width: min(100%, 420px); }
+      .book-copy { order: 1; }
+      .book-copy p { max-width: 100%; }
+      .book-visual::after { display: none; }
+      .photo-strip { grid-template-columns: 1fr; min-height: auto; }
+      .photo-strip img { aspect-ratio: 1.2; }
+      .photo-side { display: none; }
+      .event { grid-template-columns: 132px minmax(0, 1fr); }
+      .event-status { grid-column: 2; justify-self: start; }
+    }
+
+    /* ---------- Phone ---------- */
+    @media (max-width: 680px) {
+      :root { --gutter: 18px; --section-y: clamp(52px, 11vw, 64px); --header-h: 66px; }
+      h1 { font-size: clamp(38px, 10.4vw, 48px); }
+      h2 { font-size: clamp(33px, 9.2vw, 42px); }
+      header .shell { gap: 12px; }
+      .brand { --mark-size: 36px; --brand-type: 15px; gap: 8px; }
+      .brand-tagline { display: none; }
+      .menu { min-width: 48px; padding: 0 10px; font-size: 11px; letter-spacing: .08em; }
+      .hero { min-height: clamp(540px, 84svh, 700px); padding: calc(var(--header-h) + 30px) 0 44px; align-items: flex-end; }
+      .hero-copy { max-width: 100%; }
+      .hero-media { object-position: 78% center; }
+      .hero::before { background: linear-gradient(0deg, rgba(18,18,18,.98) 0%, rgba(18,18,18,.9) 52%, rgba(18,18,18,.34) 100%), linear-gradient(90deg, rgba(18,18,18,.8), transparent); }
+      .hero::after { display: none; }
+      .hero-copy { max-width: 100%; }
+      .hero .eyebrow { align-items: flex-start; margin-bottom: 14px; font-size: 11px; line-height: 1.5; letter-spacing: .09em; }
+      .hero .eyebrow::before { flex-basis: 20px; margin-top: 8px; }
+      .hero-lede { margin: 20px 0 24px; max-width: 100%; font-size: 16px; line-height: 1.6; }
+      .hero-thesis { margin-top: 10px; max-width: 10ch; font-size: clamp(42px, 13vw, 58px); }
+      .hero-actions { flex-direction: column; align-items: stretch; gap: 10px; }
+      .button { width: 100%; min-height: 54px; padding-inline: 16px; font-size: 12.5px; }
+      .hero-identity { align-items: flex-start; margin-top: 22px; font-size: 11px; line-height: 1.45; letter-spacing: .05em; }
+      .hero-identity::before { flex-basis: 26px; margin-top: 8px; }
+      .hero-nameplate { display: none; }
+      .eyebrow-desktop { display: none; }
+      .eyebrow-mobile { display: inline; }
+      .proof { padding: 26px 0; }
+      .logos { grid-template-columns: repeat(2, minmax(0, 1fr)); row-gap: 24px; column-gap: 18px; }
+      .logos img { max-height: 38px; }
+      .eyebrow { font-size: 11px; letter-spacing: .12em; }
+      .pull-line { margin-top: 26px; padding-left: 18px; font-size: 25px; }
+      .topic { grid-template-columns: 38px minmax(0, 1fr); padding: 24px 0; }
+      .topic h3 { font-size: 30px; }
+      .arc-track { --arc-indent: 22px; gap: 28px; }
+      .arc-index { margin-bottom: 10px; font-size: 18px; }
+      .arc-stage h3 { font-size: 30px; }
+      .arc-stage p { margin-top: 12px; font-size: 14px; }
+      .book-points { grid-template-columns: minmax(0, 1fr); gap: 14px; margin: 26px 0; }
+      .book-visual { width: min(100%, 340px); }
+      .resource { grid-template-columns: minmax(0, 1fr); gap: 8px; padding: 20px 0; }
+      .event { grid-template-columns: minmax(0, 1fr); gap: 8px; }
+      .event-status { grid-column: 1; margin-top: 4px; }
+      .signup { grid-template-columns: minmax(0, 1fr); }
+      .cta h2, .cta p { max-width: 100%; }
+      footer .shell { flex-direction: column; text-align: center; gap: 20px; }
+    }
+
+    @media (max-width: 380px) {
+      .brand { --mark-size: 33px; --brand-type: 14px; gap: 7px; }
+      .menu { min-width: 46px; padding: 0 8px; }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      html { scroll-behavior: auto; }
+      .js-anim .reveal { opacity: 1; filter: none; transform: none; transition: none; }
+      .js-anim.motion-ready header, .js-anim.motion-ready .hero-copy > *, .js-anim.motion-ready .hero-nameplate { opacity: 1; transform: none; animation: none; }
+      .js-anim.motion-ready .hero-media { animation: none; transform: none; }
+      .js-anim .arc-stage { opacity: 1; transform: none; transition: none; }
+      .js-anim .arc-track::after { transform: none; transition: none; }
+      .js-anim .arc-stage::before { background: var(--gold); border-color: var(--gold); transition: none; }
+      .button:hover { transform: none; }
+    }
+  </style>
+</head>
+<body>
+  <a class="skip" href="#top">Skip to content</a>
+  <header>
+    <div class="shell">
+      <a class="brand" href="#top" aria-label="What You Say Next — back to top">
+        <span class="brand-mark" aria-hidden="true">
+          <img src="assets/what-you-say-next-reversed-mark.png" alt="" />
+        </span>
+        <span class="brand-copy"><span class="brand-name">What You Say <em>Next?</em></span><span class="brand-tagline">Changes everything</span></span>
+      </a>
+      <button class="menu" type="button" aria-label="Open navigation" aria-expanded="false" aria-controls="primary-nav">Menu</button>
+      <nav id="primary-nav" aria-label="Primary navigation">
+        <a href="#topics">Speaking</a>
+        <a href="#events">Events</a>
+        <a href="#book">The Book</a>
+        <a href="#about">About Matthew</a>
+        <a href="#resources">Insights</a>
+        <a class="nav-cta" href="#contact">Invite Matthew</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <img class="hero-media" src="assets/matthew-speaking-hero.png" alt="Matthew Johnson delivering a keynote to a live audience" />
+      <div class="shell hero-grid">
+        <div class="hero-copy">
+          <p class="eyebrow"><span class="eyebrow-desktop">Speaker, author &amp; public-sector executive</span><span class="eyebrow-mobile">Matthew Johnson · speaker, author &amp; executive</span></p>
+          <h1 class="hero-thesis">Better conversations. Stronger leaders.</h1>
+          <p class="hero-lede">Matthew Johnson turns hard-earned public leadership experience into practical tools for navigating conflict, restoring trust, and moving complicated rooms toward a decision.</p>
+          <div class="hero-actions">
+            <a class="button gold" href="#contact">Invite Matthew to speak <span>↗</span></a>
+            <a class="button secondary" href="#topics">Explore keynote topics</a>
+          </div>
+          <div class="hero-identity">Effective disagreement without losing trust, talent, or purpose.</div>
+        </div>
+      </div>
+      <div class="hero-nameplate" aria-label="Matthew Johnson, speaker and author"><strong>Matthew Johnson</strong><span>Speaker · Author · Executive</span></div>
+      <div class="shell hero-foot">What you say next changes everything.</div>
+    </section>
+
+    <aside class="proof" aria-label="Professional affiliations and service">
+      <div class="shell">
+        <div class="proof-label">Professional affiliations<br />and public leadership service</div>
+        <div class="logos">
+          <img src="assets/icma-blue.png" alt="International City/County Management Association" />
+          <img src="assets/apa.jpg" alt="American Planning Association" />
+          <img src="assets/lonm.png" alt="League of New Mexico Municipalities" />
+          <img src="assets/afi.png" alt="Alliance for Innovation" />
+        </div>
+      </div>
+    </aside>
+
+    <section class="intro" id="about">
+      <div class="shell split-a reveal">
+        <div class="section-head">
+          <p class="eyebrow">The work behind the message</p>
+          <h2>Disagreement is not the problem. Silence is.</h2>
+        </div>
+        <div class="intro-copy">
+          <p>Matthew has spent more than fifteen years leading through public meetings, competing priorities, institutional risk, and the moments when a room needs clarity more than another polished answer.</p>
+          <p>His work is grounded in a simple idea: a plan is a living agreement. Leaders have to surface unresolved friction, turn intention into measurable commitments, and keep the feedback loop open when circumstances change.</p>
+          <div class="pull-line">A strong conversation leaves the room with a clearer decision, shared language, and a practical way forward.</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="topics" id="topics">
+      <div class="shell">
+        <div class="split-a topics-head reveal">
+          <div class="section-head"><p class="eyebrow">Keynotes and workshops</p><h2>Built for the rooms<br />that cannot drift.</h2></div>
+          <p>Practical, story-driven sessions for government, associations, leadership teams, and organizations carrying high public trust.</p>
+        </div>
+        <div class="topic-list reveal">
+          <article class="topic"><div class="topic-num">01</div><h3>Effective Disagreement</h3><p>How to tell the truth without burning the bridge, humiliating the other side, or losing sight of the mission.</p></article>
+          <article class="topic"><div class="topic-num">02</div><h3>The Cost of Silence</h3><p>Why thoughtful people go quiet, how authority drifts, and what leaders must interrupt before compliance replaces trust.</p></article>
+          <article class="topic"><div class="topic-num">03</div><h3>Leading Under Pressure</h3><p>A field-tested structure for protecting dignity, correcting misinformation, and moving difficult rooms toward a decision.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="arc" id="method" aria-labelledby="method-title">
+      <div class="shell">
+        <div class="split-a arc-head reveal">
+          <div class="section-head">
+            <p class="eyebrow">Matthew’s method for hard conversations</p>
+            <h2 id="method-title">Every difficult room<br />moves the same way.</h2>
+          </div>
+          <p>The keynotes above and the book below run on one sequence. Name what the room is avoiding, hand people language that holds, and leave with a decision everyone can repeat.</p>
+        </div>
+        <ol class="arc-track reveal" role="list">
+          <li class="arc-stage">
+            <span class="arc-index" aria-hidden="true">01</span>
+            <h3>Tension</h3>
+            <p>Start with the thing everyone already feels and no one has said. Unspoken friction does not settle on its own. It moves somewhere harder to reach.</p>
+          </li>
+          <li class="arc-stage">
+            <span class="arc-index" aria-hidden="true">02</span>
+            <h3>Better language</h3>
+            <p>Trade the words that escalate for words that hold. The goal is never a clever script. It is the next sentence that tells the truth and protects the relationship.</p>
+          </li>
+          <li class="arc-stage">
+            <span class="arc-index" aria-hidden="true">03</span>
+            <h3>Clear decision</h3>
+            <p>Close the loop out loud. The room leaves with a decision, shared language, and a practical way forward instead of a polite silence.</p>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <section class="book" id="book">
+      <div class="shell split-b reveal">
+        <div class="book-visual"><img class="book-cover" src="assets/effective-disagreement-cover.jpg" alt="Effective Disagreement by Matthew Johnson book cover" /></div>
+        <div class="book-copy">
+          <p class="eyebrow">The forthcoming book</p>
+          <h2>Effective<br />Disagreement</h2>
+          <p><strong>How to Lead Through Conflict Without Losing Trust, Talent, or Purpose.</strong></p>
+          <p>The book moves beyond winning arguments. It is a practical guide to staying anchored to the truth, committed to the relationship, and loyal to the mission at the same time.</p>
+          <div class="book-points"><div class="book-point">Interrupt harmful behavior without creating a spectacle</div><div class="book-point">Restore structure when a conversation begins to drift</div><div class="book-point">Protect dignity while keeping the work moving</div></div>
+          <a class="button" href="#contact">Bring the message to your organization</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="experience">
+      <div class="shell split-a experience-head reveal">
+        <div class="section-head"><p class="eyebrow">Credibility you can feel</p><h2>Not theory from the sidelines.</h2></div>
+        <p>Matthew’s perspective comes from the work itself: public leadership, planning, executive responsibility, and the complicated human moments that never fit neatly on an agenda.</p>
+      </div>
+      <div class="photo-strip">
+        <img class="photo-main" src="assets/matthew-workshop.png" alt="Matthew Johnson leading an interactive leadership workshop" />
+        <img class="photo-side" src="assets/matthew-portrait.png" alt="Matthew Johnson" />
+      </div>
+    </section>
+
+    <section class="credential">
+      <div class="shell split-b reveal">
+        <div class="credential-image">
+          <img src="assets/phil-jones-certification.jpg" alt="Matthew Johnson receiving his Exactly What to Say certification from Phil M. Jones" />
+          <img class="credential-badge" src="assets/exactly-what-to-say-badge-official.png" alt="Exactly What to Say Certified Guide" />
+        </div>
+        <div class="credential-copy">
+          <p class="eyebrow">Exactly What to Say certified guide</p>
+          <h2>Language that helps people move.</h2>
+          <p>As an Exactly What to Say Certified Guide, Matthew brings proven language frameworks into difficult, high-stakes conversations. The goal is not a clever script. It is helping leaders find the next words that protect trust and keep the work moving.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="events" id="events">
+      <div class="shell">
+        <div class="split-a events-head reveal">
+          <div class="section-head"><p class="eyebrow">Speaking record</p><h2>Where Matthew is taking the conversation.</h2></div>
+          <p>Conference appearances focused on planning, public leadership, effective disagreement, and the words leaders need when the room gets difficult.</p>
+        </div>
+        <div class="event-list reveal">
+          <article class="event">
+            <div class="event-date">October 2025</div>
+            <div><h3>NCAPA Annual Conference</h3><p>North Carolina Chapter of the American Planning Association · Charlotte, North Carolina</p></div>
+            <div class="event-status">Past event</div>
+          </article>
+          <article class="event">
+            <div class="event-date">April 2026</div>
+            <div><h3>National Planning Conference · NPC26</h3><p>American Planning Association · Detroit, Michigan</p></div>
+            <div class="event-status">Past event</div>
+          </article>
+          <article class="event">
+            <div class="event-date">October 2026</div>
+            <div><h3>ICMA Annual Conference</h3><p>International City/County Management Association · Long Beach, California</p></div>
+            <div class="event-status upcoming">Upcoming</div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="resources" id="resources">
+      <div class="shell split-a reveal">
+        <div class="section-head"><p class="eyebrow">More from Matthew</p><h2>Ideas for the next hard conversation.</h2></div>
+        <div class="resource-list">
+          <a class="resource" href="#contact"><span>Article</span><strong>The 10 Biggest Challenges Facing New Planners</strong></a>
+          <a class="resource" href="https://thecitymanagerexperience.podbean.com/" target="_blank" rel="noreferrer"><span>Podcast</span><strong>The City Manager Experience</strong></a>
+          <a class="resource" href="https://podcasts.apple.com/us/podcast/the-city-manager-unfiltered/id1690196553" target="_blank" rel="noreferrer"><span>Podcast</span><strong>The City Manager Unfiltered</strong></a>
+          <div class="newsletter">
+            <h3>Get the next phrase.</h3>
+            <p>Practical language for leading hard conversations without losing trust, talent, or purpose.</p>
+            <form class="signup" action="https://whatyousaynext.us2.list-manage.com/subscribe/post?u=efc442e58177c2dd3bee1348c&amp;id=f8beabd1aa&amp;f_id=009a90e3f0" method="post" target="_blank">
+              <label for="newsletter-email">Email address</label>
+              <input id="newsletter-email" type="email" name="EMAIL" autocomplete="email" placeholder="Email address" required />
+              <div aria-hidden="true" style="position:absolute;left:-5000px"><input type="text" name="b_efc442e58177c2dd3bee1348c_f8beabd1aa" tabindex="-1" value="" /></div>
+              <button class="button" type="submit" name="subscribe">Join the list</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="cta" id="contact">
+      <div class="shell reveal">
+        <p class="eyebrow">Start the conversation</p>
+        <h2>Your people already know where the tension is.</h2>
+        <p>Give them a clearer way to address it. Invite Matthew to speak, lead a workshop, or help your organization prepare for the conversation it cannot keep avoiding.</p>
+        <a class="button on-gold" href="mailto:info@nexphrase.org?subject=Speaking%20inquiry">Ask about availability <span>↗</span></a>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="shell">
+      <a class="brand" href="#top" aria-label="What You Say Next — back to top">
+        <span class="brand-mark" aria-hidden="true">
+          <img src="assets/what-you-say-next-reversed-mark.png" alt="" />
+        </span>
+        <span class="brand-copy"><span class="brand-name">What You Say <em>Next?</em></span><span class="brand-tagline">Changes everything</span></span>
+      </a>
+      <p>© 2026 Matthew Johnson. What you say next changes everything.</p>
+    </div>
+  </footer>
+
+  <script>
+    (function () {
+      window.requestAnimationFrame(function () { document.documentElement.classList.add('motion-ready'); });
+      var menu = document.querySelector('.menu');
+      var nav = document.querySelector('nav');
+      if (menu && nav) {
+        menu.addEventListener('click', function () {
+          var open = nav.classList.toggle('open');
+          menu.setAttribute('aria-expanded', String(open));
+        });
+        Array.prototype.forEach.call(nav.querySelectorAll('a'), function (a) {
+          a.addEventListener('click', function () {
+            nav.classList.remove('open');
+            menu.setAttribute('aria-expanded', 'false');
+          });
+        });
+      }
+
+      /* ---- Same-page scrolling: eased, interruptible, and faithful to the hash ---- */
+      var docEl = document.documentElement;
+      var motionQuery = window.matchMedia ? window.matchMedia('(prefers-reduced-motion: reduce)') : null;
+      var INTERRUPTS = ['wheel', 'touchstart', 'pointerdown', 'keydown'];
+      var NAV_KEYS = { ArrowUp: 1, ArrowDown: 1, ArrowLeft: 1, ArrowRight: 1, PageUp: 1, PageDown: 1, Home: 1, End: 1, ' ': 1, Spacebar: 1, Escape: 1 };
+      var frame = null;
+
+      function releaseScroll() {
+        if (frame !== null) { window.cancelAnimationFrame(frame); frame = null; }
+        for (var i = 0; i < INTERRUPTS.length; i++) { window.removeEventListener(INTERRUPTS[i], interrupt); }
+        docEl.style.scrollBehavior = '';
+      }
+
+      /* The user always outranks the animation. */
+      function interrupt(event) {
+        if (event.type === 'keydown' && !NAV_KEYS[event.key]) { return; }
+        releaseScroll();
+      }
+
+      function anchorTop(el) {
+        var offset = parseFloat(window.getComputedStyle(el).scrollMarginTop) || 0;
+        var limit = Math.max(0, docEl.scrollHeight - window.innerHeight);
+        return Math.min(limit, Math.max(0, el.getBoundingClientRect().top + window.pageYOffset - offset));
+      }
+
+      function takeFocus(el) {
+        if (!el.hasAttribute('tabindex')) {
+          el.setAttribute('tabindex', '-1');
+          el.addEventListener('blur', function drop() {
+            el.removeAttribute('tabindex');
+            el.removeEventListener('blur', drop);
+          });
+        }
+        try { el.focus({ preventScroll: true }); } catch (err) { el.focus(); }
+      }
+
+      function glideTo(el) {
+        releaseScroll();
+        var start = window.pageYOffset;
+        var distance = anchorTop(el) - start;
+        if ((motionQuery && motionQuery.matches) || Math.abs(distance) < 2) {
+          window.scrollTo(0, start + distance);
+          takeFocus(el);
+          return;
+        }
+        /* Our rAF owns the motion for the duration, so the CSS smooth engine stands down. */
+        docEl.style.scrollBehavior = 'auto';
+        var duration = Math.min(1150, Math.max(420, Math.abs(distance) * .42));
+        var origin = null;
+        for (var i = 0; i < INTERRUPTS.length; i++) { window.addEventListener(INTERRUPTS[i], interrupt, { passive: true }); }
+        frame = window.requestAnimationFrame(function step(now) {
+          if (origin === null) { origin = now; }
+          var t = Math.min(1, (now - origin) / duration);
+          var eased = t < .5 ? 4 * t * t * t : 1 - Math.pow(-2 * t + 2, 3) / 2;
+          window.scrollTo(0, start + distance * eased);
+          if (t < 1) { frame = window.requestAnimationFrame(step); return; }
+          releaseScroll();
+          takeFocus(el);
+        });
+      }
+
+      function hashTarget(hash) {
+        if (!hash || hash === '#') { return null; }
+        var id = hash.slice(1);
+        try { id = decodeURIComponent(id); } catch (err) { /* a malformed hash is used verbatim */ }
+        return document.getElementById(id);
+      }
+
+      document.addEventListener('click', function (event) {
+        if (event.defaultPrevented || event.button !== 0 || event.metaKey || event.ctrlKey || event.shiftKey || event.altKey) { return; }
+        var link = event.target && event.target.closest ? event.target.closest('a[href]') : null;
+        if (!link || link.target === '_blank' || link.hasAttribute('download')) { return; }
+        if (link.origin !== location.origin || link.pathname !== location.pathname || link.search !== location.search) { return; }
+        var el = hashTarget(link.hash);
+        if (!el) { return; }
+        event.preventDefault();
+        if (location.hash !== link.hash && window.history && history.pushState) {
+          try { history.pushState(null, '', link.hash); } catch (err) { /* hash stays put where pushState is blocked */ }
+        }
+        glideTo(el);
+      });
+
+      /* Back, forward, and hand-typed hashes still work; they just arrive with the same easing. */
+      window.addEventListener('hashchange', function () {
+        var el = hashTarget(location.hash);
+        if (el) { glideTo(el); }
+      });
+
+      if (!document.documentElement.classList.contains('js-anim')) { return; }
+
+      var reveals = Array.prototype.slice.call(document.querySelectorAll('.reveal'));
+      var observer = new IntersectionObserver(function (entries) {
+        entries.forEach(function (entry) {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('is-visible');
+            observer.unobserve(entry.target);
+          }
+        });
+      }, { threshold: .12 });
+      reveals.forEach(function (el) { observer.observe(el); });
+
+      /* Restrained hero parallax: enough depth to feel considered, never enough to distract. */
+      var heroMedia = document.querySelector('.hero-media');
+      var reduceMotion = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+      if (heroMedia && !reduceMotion) {
+        var ticking = false;
+        window.addEventListener('scroll', function () {
+          if (ticking) { return; }
+          ticking = true;
+          window.requestAnimationFrame(function () {
+            var shift = Math.min(18, Math.max(0, window.scrollY * .035));
+            heroMedia.style.setProperty('--hero-shift', shift + 'px');
+            ticking = false;
+          });
+        }, { passive: true });
+      }
+
+      /* Failsafe: nothing stays hidden if the observer never fires. */
+      window.setTimeout(function () {
+        reveals.forEach(function (el) { el.classList.add('is-visible'); });
+      }, 2500);
+    })();
+  </script>
+</body>
+</html>
