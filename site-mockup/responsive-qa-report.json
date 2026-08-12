@@ -1,0 +1,3260 @@
+[
+  {
+    "viewport": {
+      "width": 320,
+      "height": 844
+    },
+    "scrollWidth": 320,
+    "documentHeight": 8999,
+    "brand": {
+      "x": 18,
+      "y": 16.5,
+      "width": 140.984375,
+      "height": 33,
+      "top": 16.5,
+      "right": 158.984375,
+      "bottom": 49.5,
+      "left": 18
+    },
+    "brandMark": {
+      "x": 18,
+      "y": 16.5,
+      "width": 33,
+      "height": 33,
+      "top": 16.5,
+      "right": 51,
+      "bottom": 49.5,
+      "left": 18
+    },
+    "menu": {
+      "x": 245.0625,
+      "y": 11,
+      "width": 56.9375,
+      "height": 44,
+      "top": 11,
+      "right": 302,
+      "bottom": 55,
+      "left": 245.0625
+    },
+    "hero": {
+      "x": 0,
+      "y": 0,
+      "width": 320,
+      "height": 705.9375,
+      "top": 0,
+      "right": 320,
+      "bottom": 705.9375,
+      "left": 0
+    },
+    "shell": {
+      "x": 18,
+      "y": 96,
+      "width": 284,
+      "height": 565.9375,
+      "top": 96,
+      "right": 302,
+      "bottom": 661.9375,
+      "left": 18
+    },
+    "heroCopy": {
+      "x": 18,
+      "y": 96,
+      "width": 284,
+      "height": 565.9375,
+      "top": 96,
+      "right": 302,
+      "bottom": 661.9375,
+      "left": 18
+    },
+    "heroIdentityText": {
+      "x": 58,
+      "y": 631.0464477539062,
+      "width": 238,
+      "height": 29.9375,
+      "top": 631.0464477539062,
+      "right": 296,
+      "bottom": 660.9839477539062,
+      "left": 58
+    },
+    "heroNameplate": {
+      "x": 0,
+      "y": 0,
+      "width": 0,
+      "height": 0,
+      "top": 0,
+      "right": 0,
+      "bottom": 0,
+      "left": 0
+    },
+    "heroFootText": null,
+    "heroNameplateDisplay": "none",
+    "mobileEyebrowDisplay": "block",
+    "motionReady": true,
+    "heroTransform": "matrix(1.01542, 0, 0, 1.01542, 0, 0)",
+    "logoComplete": true,
+    "logoNatural": [
+      512,
+      512
+    ],
+    "bookVisual": {
+      "x": 18,
+      "y": 4699.421875,
+      "width": 284,
+      "height": 355,
+      "top": 4699.421875,
+      "right": 302,
+      "bottom": 5054.421875,
+      "left": 18
+    },
+    "bookCover": {
+      "x": 52.49991989135742,
+      "y": 4713.69677734375,
+      "width": 214.96888732910156,
+      "height": 311.3876953125,
+      "top": 4713.69677734375,
+      "right": 267.468807220459,
+      "bottom": 5025.08447265625,
+      "left": 52.49991989135742
+    },
+    "credentialImage": {
+      "x": 18,
+      "y": 5794.921875,
+      "width": 284,
+      "height": 200,
+      "top": 5794.921875,
+      "right": 302,
+      "bottom": 5994.921875,
+      "left": 18
+    },
+    "credentialBadge": {
+      "x": 210,
+      "y": 5917,
+      "width": 80,
+      "height": 65.921875,
+      "top": 5917,
+      "right": 290,
+      "bottom": 5982.921875,
+      "left": 210
+    },
+    "sectionOrder": [
+      "about",
+      "topics",
+      "method",
+      "book",
+      "events",
+      "resources",
+      "contact"
+    ],
+    "arcTrack": {
+      "x": 18,
+      "y": 3234.453125,
+      "width": 284,
+      "height": 593.8125,
+      "top": 3234.453125,
+      "right": 302,
+      "bottom": 3828.265625,
+      "left": 18
+    },
+    "arcStages": [
+      {
+        "lead": "Tension",
+        "left": 40,
+        "right": 302,
+        "width": 262,
+        "height": 186.96875
+      },
+      {
+        "lead": "Better language",
+        "left": 40,
+        "right": 302,
+        "width": 262,
+        "height": 186.96875
+      },
+      {
+        "lead": "Clear decision",
+        "left": 40,
+        "right": 302,
+        "width": 262,
+        "height": 163.875
+      }
+    ],
+    "fontSizes": {
+      "heroEyebrow": 11,
+      "heroIdentity": 11,
+      "body": 16
+    },
+    "logoText": "WHAT YOU SAY NEXT?",
+    "title": "Matthew Johnson | What You Say Next",
+    "name": "qa-mobile-320",
+    "overflow": 0
+  },
+  {
+    "viewport": {
+      "width": 390,
+      "height": 844
+    },
+    "scrollWidth": 390,
+    "documentHeight": 8539,
+    "brand": {
+      "x": 18,
+      "y": 15,
+      "width": 152.1875,
+      "height": 36,
+      "top": 15,
+      "right": 170.1875,
+      "bottom": 51,
+      "left": 18
+    },
+    "brandMark": {
+      "x": 18,
+      "y": 15,
+      "width": 36,
+      "height": 36,
+      "top": 15,
+      "right": 54,
+      "bottom": 51,
+      "left": 18
+    },
+    "menu": {
+      "x": 311.0625,
+      "y": 11,
+      "width": 60.9375,
+      "height": 44,
+      "top": 11,
+      "right": 372,
+      "bottom": 55,
+      "left": 311.0625
+    },
+    "hero": {
+      "x": 0,
+      "y": 0,
+      "width": 390,
+      "height": 711.34375,
+      "top": 0,
+      "right": 390,
+      "bottom": 711.34375,
+      "left": 0
+    },
+    "shell": {
+      "x": 18,
+      "y": 96,
+      "width": 354,
+      "height": 571.34375,
+      "top": 96,
+      "right": 372,
+      "bottom": 667.34375,
+      "left": 18
+    },
+    "heroCopy": {
+      "x": 18,
+      "y": 96,
+      "width": 354,
+      "height": 571.34375,
+      "top": 96,
+      "right": 372,
+      "bottom": 667.34375,
+      "left": 18
+    },
+    "heroIdentityText": {
+      "x": 58,
+      "y": 636.004150390625,
+      "width": 285.265625,
+      "height": 29.9375,
+      "top": 636.004150390625,
+      "right": 343.265625,
+      "bottom": 665.941650390625,
+      "left": 58
+    },
+    "heroNameplate": {
+      "x": 0,
+      "y": 0,
+      "width": 0,
+      "height": 0,
+      "top": 0,
+      "right": 0,
+      "bottom": 0,
+      "left": 0
+    },
+    "heroFootText": null,
+    "heroNameplateDisplay": "none",
+    "mobileEyebrowDisplay": "block",
+    "motionReady": true,
+    "heroTransform": "matrix(1.01527, 0, 0, 1.01527, 0, 0)",
+    "logoComplete": true,
+    "logoNatural": [
+      512,
+      512
+    ],
+    "bookVisual": {
+      "x": 25,
+      "y": 4247.90625,
+      "width": 340,
+      "height": 425,
+      "top": 4247.90625,
+      "right": 365,
+      "bottom": 4672.90625,
+      "left": 25
+    },
+    "bookCover": {
+      "x": 66.30815124511719,
+      "y": 4264.99560546875,
+      "width": 257.36810302734375,
+      "height": 372.8056640625,
+      "top": 4264.99560546875,
+      "right": 323.67625427246094,
+      "bottom": 4637.80126953125,
+      "left": 66.30815124511719
+    },
+    "credentialImage": {
+      "x": 18,
+      "y": 5449.8125,
+      "width": 354,
+      "height": 249.28125,
+      "top": 5449.8125,
+      "right": 372,
+      "bottom": 5699.09375,
+      "left": 18
+    },
+    "credentialBadge": {
+      "x": 280,
+      "y": 5621.171875,
+      "width": 80,
+      "height": 65.921875,
+      "top": 5621.171875,
+      "right": 360,
+      "bottom": 5687.09375,
+      "left": 280
+    },
+    "sectionOrder": [
+      "about",
+      "topics",
+      "method",
+      "book",
+      "events",
+      "resources",
+      "contact"
+    ],
+    "arcTrack": {
+      "x": 18,
+      "y": 2947.375,
+      "width": 354,
+      "height": 524.53125,
+      "top": 2947.375,
+      "right": 372,
+      "bottom": 3471.90625,
+      "left": 18
+    },
+    "arcStages": [
+      {
+        "lead": "Tension",
+        "left": 40,
+        "right": 372,
+        "width": 332,
+        "height": 163.875
+      },
+      {
+        "lead": "Better language",
+        "left": 40,
+        "right": 372,
+        "width": 332,
+        "height": 163.875
+      },
+      {
+        "lead": "Clear decision",
+        "left": 40,
+        "right": 372,
+        "width": 332,
+        "height": 140.78125
+      }
+    ],
+    "fontSizes": {
+      "heroEyebrow": 11,
+      "heroIdentity": 11,
+      "body": 16
+    },
+    "logoText": "WHAT YOU SAY NEXT?",
+    "title": "Matthew Johnson | What You Say Next",
+    "name": "brand-mobile-true-390",
+    "overflow": 0
+  },
+  {
+    "viewport": {
+      "width": 414,
+      "height": 896
+    },
+    "scrollWidth": 414,
+    "documentHeight": 8300,
+    "brand": {
+      "x": 18,
+      "y": 15,
+      "width": 152.1875,
+      "height": 36,
+      "top": 15,
+      "right": 170.1875,
+      "bottom": 51,
+      "left": 18
+    },
+    "brandMark": {
+      "x": 18,
+      "y": 15,
+      "width": 36,
+      "height": 36,
+      "top": 15,
+      "right": 54,
+      "bottom": 51,
+      "left": 18
+    },
+    "menu": {
+      "x": 335.0625,
+      "y": 11,
+      "width": 60.9375,
+      "height": 44,
+      "top": 11,
+      "right": 396,
+      "bottom": 55,
+      "left": 335.0625
+    },
+    "hero": {
+      "x": 0,
+      "y": 0,
+      "width": 414,
+      "height": 700,
+      "top": 0,
+      "right": 414,
+      "bottom": 700,
+      "left": 0
+    },
+    "shell": {
+      "x": 18,
+      "y": 99.1875,
+      "width": 378,
+      "height": 556.8125,
+      "top": 99.1875,
+      "right": 396,
+      "bottom": 656,
+      "left": 18
+    },
+    "heroCopy": {
+      "x": 18,
+      "y": 99.1875,
+      "width": 378,
+      "height": 556.8125,
+      "top": 99.1875,
+      "right": 396,
+      "bottom": 656,
+      "left": 18
+    },
+    "heroIdentityText": {
+      "x": 58,
+      "y": 624.659912109375,
+      "width": 332,
+      "height": 29.9375,
+      "top": 624.659912109375,
+      "right": 390,
+      "bottom": 654.597412109375,
+      "left": 58
+    },
+    "heroNameplate": {
+      "x": 0,
+      "y": 0,
+      "width": 0,
+      "height": 0,
+      "top": 0,
+      "right": 0,
+      "bottom": 0,
+      "left": 0
+    },
+    "heroFootText": null,
+    "heroNameplateDisplay": "none",
+    "mobileEyebrowDisplay": "block",
+    "motionReady": true,
+    "heroTransform": "matrix(1.01527, 0, 0, 1.01527, 0, 0)",
+    "logoComplete": true,
+    "logoNatural": [
+      512,
+      512
+    ],
+    "bookVisual": {
+      "x": 37,
+      "y": 4047.75,
+      "width": 340,
+      "height": 425,
+      "top": 4047.75,
+      "right": 377,
+      "bottom": 4472.75,
+      "left": 37
+    },
+    "bookCover": {
+      "x": 78.30815124511719,
+      "y": 4064.83935546875,
+      "width": 257.36810302734375,
+      "height": 372.8056640625,
+      "top": 4064.83935546875,
+      "right": 335.67625427246094,
+      "bottom": 4437.64501953125,
+      "left": 78.30815124511719
+    },
+    "credentialImage": {
+      "x": 18,
+      "y": 5246.5,
+      "width": 378,
+      "height": 266.1875,
+      "top": 5246.5,
+      "right": 396,
+      "bottom": 5512.6875,
+      "left": 18
+    },
+    "credentialBadge": {
+      "x": 304,
+      "y": 5434.765625,
+      "width": 80,
+      "height": 65.921875,
+      "top": 5434.765625,
+      "right": 384,
+      "bottom": 5500.6875,
+      "left": 304
+    },
+    "sectionOrder": [
+      "about",
+      "topics",
+      "method",
+      "book",
+      "events",
+      "resources",
+      "contact"
+    ],
+    "arcTrack": {
+      "x": 18,
+      "y": 2812.3125,
+      "width": 378,
+      "height": 501.4375,
+      "top": 2812.3125,
+      "right": 396,
+      "bottom": 3313.75,
+      "left": 18
+    },
+    "arcStages": [
+      {
+        "lead": "Tension",
+        "left": 40,
+        "right": 396,
+        "width": 356,
+        "height": 140.78125
+      },
+      {
+        "lead": "Better language",
+        "left": 40,
+        "right": 396,
+        "width": 356,
+        "height": 163.875
+      },
+      {
+        "lead": "Clear decision",
+        "left": 40,
+        "right": 396,
+        "width": 356,
+        "height": 140.78125
+      }
+    ],
+    "fontSizes": {
+      "heroEyebrow": 11,
+      "heroIdentity": 11,
+      "body": 16
+    },
+    "logoText": "WHAT YOU SAY NEXT?",
+    "title": "Matthew Johnson | What You Say Next",
+    "name": "qa-mobile-414",
+    "overflow": 0
+  },
+  {
+    "viewport": {
+      "width": 600,
+      "height": 900
+    },
+    "scrollWidth": 600,
+    "documentHeight": 8231,
+    "brand": {
+      "x": 18,
+      "y": 15,
+      "width": 152.1875,
+      "height": 36,
+      "top": 15,
+      "right": 170.1875,
+      "bottom": 51,
+      "left": 18
+    },
+    "brandMark": {
+      "x": 18,
+      "y": 15,
+      "width": 36,
+      "height": 36,
+      "top": 15,
+      "right": 54,
+      "bottom": 51,
+      "left": 18
+    },
+    "menu": {
+      "x": 521.0625,
+      "y": 11,
+      "width": 60.9375,
+      "height": 44,
+      "top": 11,
+      "right": 582,
+      "bottom": 55,
+      "left": 521.0625
+    },
+    "hero": {
+      "x": 0,
+      "y": 0,
+      "width": 600,
+      "height": 700,
+      "top": 0,
+      "right": 600,
+      "bottom": 700,
+      "left": 0
+    },
+    "shell": {
+      "x": 18,
+      "y": 142.34375,
+      "width": 564,
+      "height": 513.65625,
+      "top": 142.34375,
+      "right": 582,
+      "bottom": 656,
+      "left": 18
+    },
+    "heroCopy": {
+      "x": 18,
+      "y": 142.34375,
+      "width": 564,
+      "height": 513.65625,
+      "top": 142.34375,
+      "right": 582,
+      "bottom": 656,
+      "left": 18
+    },
+    "heroIdentityText": {
+      "x": 58,
+      "y": 640.7935791015625,
+      "width": 476.15625,
+      "height": 14,
+      "top": 640.7935791015625,
+      "right": 534.15625,
+      "bottom": 654.7935791015625,
+      "left": 58
+    },
+    "heroNameplate": {
+      "x": 0,
+      "y": 0,
+      "width": 0,
+      "height": 0,
+      "top": 0,
+      "right": 0,
+      "bottom": 0,
+      "left": 0
+    },
+    "heroFootText": null,
+    "heroNameplateDisplay": "none",
+    "mobileEyebrowDisplay": "block",
+    "motionReady": true,
+    "heroTransform": "matrix(1.01534, 0, 0, 1.01534, 0, 0)",
+    "logoComplete": true,
+    "logoNatural": [
+      512,
+      512
+    ],
+    "bookVisual": {
+      "x": 130,
+      "y": 3805.0625,
+      "width": 340,
+      "height": 425,
+      "top": 3805.0625,
+      "right": 470,
+      "bottom": 4230.0625,
+      "left": 130
+    },
+    "bookCover": {
+      "x": 171.3081512451172,
+      "y": 3822.15185546875,
+      "width": 257.36810302734375,
+      "height": 372.8056640625,
+      "top": 3822.15185546875,
+      "right": 428.67625427246094,
+      "bottom": 4194.95751953125,
+      "left": 171.3081512451172
+    },
+    "credentialImage": {
+      "x": 18,
+      "y": 5178.75,
+      "width": 564,
+      "height": 397.171875,
+      "top": 5178.75,
+      "right": 582,
+      "bottom": 5575.921875,
+      "left": 18
+    },
+    "credentialBadge": {
+      "x": 490,
+      "y": 5498,
+      "width": 80,
+      "height": 65.921875,
+      "top": 5498,
+      "right": 570,
+      "bottom": 5563.921875,
+      "left": 490
+    },
+    "sectionOrder": [
+      "about",
+      "topics",
+      "method",
+      "book",
+      "events",
+      "resources",
+      "contact"
+    ],
+    "arcTrack": {
+      "x": 18,
+      "y": 2649.8125,
+      "width": 564,
+      "height": 432.15625,
+      "top": 2649.8125,
+      "right": 582,
+      "bottom": 3081.96875,
+      "left": 18
+    },
+    "arcStages": [
+      {
+        "lead": "Tension",
+        "left": 40,
+        "right": 582,
+        "width": 542,
+        "height": 117.6875
+      },
+      {
+        "lead": "Better language",
+        "left": 40,
+        "right": 582,
+        "width": 542,
+        "height": 140.78125
+      },
+      {
+        "lead": "Clear decision",
+        "left": 40,
+        "right": 582,
+        "width": 542,
+        "height": 117.6875
+      }
+    ],
+    "fontSizes": {
+      "heroEyebrow": 11,
+      "heroIdentity": 11,
+      "body": 16
+    },
+    "logoText": "WHAT YOU SAY NEXT?",
+    "title": "Matthew Johnson | What You Say Next",
+    "name": "qa-edge-600",
+    "overflow": 0
+  },
+  {
+    "viewport": {
+      "width": 601,
+      "height": 900
+    },
+    "scrollWidth": 601,
+    "documentHeight": 8233,
+    "brand": {
+      "x": 18,
+      "y": 15,
+      "width": 152.1875,
+      "height": 36,
+      "top": 15,
+      "right": 170.1875,
+      "bottom": 51,
+      "left": 18
+    },
+    "brandMark": {
+      "x": 18,
+      "y": 15,
+      "width": 36,
+      "height": 36,
+      "top": 15,
+      "right": 54,
+      "bottom": 51,
+      "left": 18
+    },
+    "menu": {
+      "x": 522.0625,
+      "y": 11,
+      "width": 60.9375,
+      "height": 44,
+      "top": 11,
+      "right": 583,
+      "bottom": 55,
+      "left": 522.0625
+    },
+    "hero": {
+      "x": 0,
+      "y": 0,
+      "width": 601,
+      "height": 700,
+      "top": 0,
+      "right": 601,
+      "bottom": 700,
+      "left": 0
+    },
+    "shell": {
+      "x": 18,
+      "y": 142.34375,
+      "width": 565,
+      "height": 513.65625,
+      "top": 142.34375,
+      "right": 583,
+      "bottom": 656,
+      "left": 18
+    },
+    "heroCopy": {
+      "x": 18,
+      "y": 142.34375,
+      "width": 565,
+      "height": 513.65625,
+      "top": 142.34375,
+      "right": 583,
+      "bottom": 656,
+      "left": 18
+    },
+    "heroIdentityText": {
+      "x": 58,
+      "y": 641.7893676757812,
+      "width": 476.15625,
+      "height": 14,
+      "top": 641.7893676757812,
+      "right": 534.15625,
+      "bottom": 655.7893676757812,
+      "left": 58
+    },
+    "heroNameplate": {
+      "x": 0,
+      "y": 0,
+      "width": 0,
+      "height": 0,
+      "top": 0,
+      "right": 0,
+      "bottom": 0,
+      "left": 0
+    },
+    "heroFootText": null,
+    "heroNameplateDisplay": "none",
+    "mobileEyebrowDisplay": "block",
+    "motionReady": true,
+    "heroTransform": "matrix(1.01563, 0, 0, 1.01563, 0, 0)",
+    "logoComplete": true,
+    "logoNatural": [
+      512,
+      512
+    ],
+    "bookVisual": {
+      "x": 130.5,
+      "y": 3805.296875,
+      "width": 340,
+      "height": 425,
+      "top": 3805.296875,
+      "right": 470.5,
+      "bottom": 4230.296875,
+      "left": 130.5
+    },
+    "bookCover": {
+      "x": 171.8081512451172,
+      "y": 3822.38623046875,
+      "width": 257.36810302734375,
+      "height": 372.8056640625,
+      "top": 3822.38623046875,
+      "right": 429.17625427246094,
+      "bottom": 4195.19189453125,
+      "left": 171.8081512451172
+    },
+    "credentialImage": {
+      "x": 18,
+      "y": 5179.859375,
+      "width": 565,
+      "height": 397.875,
+      "top": 5179.859375,
+      "right": 583,
+      "bottom": 5577.734375,
+      "left": 18
+    },
+    "credentialBadge": {
+      "x": 491,
+      "y": 5499.8125,
+      "width": 80,
+      "height": 65.921875,
+      "top": 5499.8125,
+      "right": 571,
+      "bottom": 5565.734375,
+      "left": 491
+    },
+    "sectionOrder": [
+      "about",
+      "topics",
+      "method",
+      "book",
+      "events",
+      "resources",
+      "contact"
+    ],
+    "arcTrack": {
+      "x": 18,
+      "y": 2650,
+      "width": 565,
+      "height": 432.15625,
+      "top": 2650,
+      "right": 583,
+      "bottom": 3082.15625,
+      "left": 18
+    },
+    "arcStages": [
+      {
+        "lead": "Tension",
+        "left": 40,
+        "right": 583,
+        "width": 543,
+        "height": 117.6875
+      },
+      {
+        "lead": "Better language",
+        "left": 40,
+        "right": 583,
+        "width": 543,
+        "height": 140.78125
+      },
+      {
+        "lead": "Clear decision",
+        "left": 40,
+        "right": 583,
+        "width": 543,
+        "height": 117.6875
+      }
+    ],
+    "fontSizes": {
+      "heroEyebrow": 11,
+      "heroIdentity": 11,
+      "body": 16
+    },
+    "logoText": "WHAT YOU SAY NEXT?",
+    "title": "Matthew Johnson | What You Say Next",
+    "name": "qa-edge-601",
+    "overflow": 0
+  },
+  {
+    "viewport": {
+      "width": 605,
+      "height": 900
+    },
+    "scrollWidth": 605,
+    "documentHeight": 8241,
+    "brand": {
+      "x": 18,
+      "y": 15,
+      "width": 152.1875,
+      "height": 36,
+      "top": 15,
+      "right": 170.1875,
+      "bottom": 51,
+      "left": 18
+    },
+    "brandMark": {
+      "x": 18,
+      "y": 15,
+      "width": 36,
+      "height": 36,
+      "top": 15,
+      "right": 54,
+      "bottom": 51,
+      "left": 18
+    },
+    "menu": {
+      "x": 526.0625,
+      "y": 11,
+      "width": 60.9375,
+      "height": 44,
+      "top": 11,
+      "right": 587,
+      "bottom": 55,
+      "left": 526.0625
+    },
+    "hero": {
+      "x": 0,
+      "y": 0,
+      "width": 605,
+      "height": 700,
+      "top": 0,
+      "right": 605,
+      "bottom": 700,
+      "left": 0
+    },
+    "shell": {
+      "x": 18,
+      "y": 142.34375,
+      "width": 569,
+      "height": 513.65625,
+      "top": 142.34375,
+      "right": 587,
+      "bottom": 656,
+      "left": 18
+    },
+    "heroCopy": {
+      "x": 18,
+      "y": 142.34375,
+      "width": 569,
+      "height": 513.65625,
+      "top": 142.34375,
+      "right": 587,
+      "bottom": 656,
+      "left": 18
+    },
+    "heroIdentityText": {
+      "x": 58,
+      "y": 641.5679321289062,
+      "width": 476.15625,
+      "height": 14,
+      "top": 641.5679321289062,
+      "right": 534.15625,
+      "bottom": 655.5679321289062,
+      "left": 58
+    },
+    "heroNameplate": {
+      "x": 0,
+      "y": 0,
+      "width": 0,
+      "height": 0,
+      "top": 0,
+      "right": 0,
+      "bottom": 0,
+      "left": 0
+    },
+    "heroFootText": null,
+    "heroNameplateDisplay": "none",
+    "mobileEyebrowDisplay": "block",
+    "motionReady": true,
+    "heroTransform": "matrix(1.01557, 0, 0, 1.01557, 0, 0)",
+    "logoComplete": true,
+    "logoNatural": [
+      512,
+      512
+    ],
+    "bookVisual": {
+      "x": 132.5,
+      "y": 3806.3125,
+      "width": 340,
+      "height": 425,
+      "top": 3806.3125,
+      "right": 472.5,
+      "bottom": 4231.3125,
+      "left": 132.5
+    },
+    "bookCover": {
+      "x": 173.8081512451172,
+      "y": 3823.40185546875,
+      "width": 257.36810302734375,
+      "height": 372.8056640625,
+      "top": 3823.40185546875,
+      "right": 431.17625427246094,
+      "bottom": 4196.20751953125,
+      "left": 173.8081512451172
+    },
+    "credentialImage": {
+      "x": 18,
+      "y": 5184.40625,
+      "width": 569,
+      "height": 400.703125,
+      "top": 5184.40625,
+      "right": 587,
+      "bottom": 5585.109375,
+      "left": 18
+    },
+    "credentialBadge": {
+      "x": 495,
+      "y": 5507.1875,
+      "width": 80,
+      "height": 65.921875,
+      "top": 5507.1875,
+      "right": 575,
+      "bottom": 5573.109375,
+      "left": 495
+    },
+    "sectionOrder": [
+      "about",
+      "topics",
+      "method",
+      "book",
+      "events",
+      "resources",
+      "contact"
+    ],
+    "arcTrack": {
+      "x": 18,
+      "y": 2650.8125,
+      "width": 569,
+      "height": 432.15625,
+      "top": 2650.8125,
+      "right": 587,
+      "bottom": 3082.96875,
+      "left": 18
+    },
+    "arcStages": [
+      {
+        "lead": "Tension",
+        "left": 40,
+        "right": 587,
+        "width": 547,
+        "height": 117.6875
+      },
+      {
+        "lead": "Better language",
+        "left": 40,
+        "right": 587,
+        "width": 547,
+        "height": 140.78125
+      },
+      {
+        "lead": "Clear decision",
+        "left": 40,
+        "right": 587,
+        "width": 547,
+        "height": 117.6875
+      }
+    ],
+    "fontSizes": {
+      "heroEyebrow": 11,
+      "heroIdentity": 11,
+      "body": 16
+    },
+    "logoText": "WHAT YOU SAY NEXT?",
+    "title": "Matthew Johnson | What You Say Next",
+    "name": "qa-edge-605",
+    "overflow": 0
+  },
+  {
+    "viewport": {
+      "width": 611,
+      "height": 900
+    },
+    "scrollWidth": 611,
+    "documentHeight": 8229,
+    "brand": {
+      "x": 18,
+      "y": 15,
+      "width": 152.1875,
+      "height": 36,
+      "top": 15,
+      "right": 170.1875,
+      "bottom": 51,
+      "left": 18
+    },
+    "brandMark": {
+      "x": 18,
+      "y": 15,
+      "width": 36,
+      "height": 36,
+      "top": 15,
+      "right": 54,
+      "bottom": 51,
+      "left": 18
+    },
+    "menu": {
+      "x": 532.0625,
+      "y": 11,
+      "width": 60.9375,
+      "height": 44,
+      "top": 11,
+      "right": 593,
+      "bottom": 55,
+      "left": 532.0625
+    },
+    "hero": {
+      "x": 0,
+      "y": 0,
+      "width": 611,
+      "height": 700,
+      "top": 0,
+      "right": 611,
+      "bottom": 700,
+      "left": 0
+    },
+    "shell": {
+      "x": 18,
+      "y": 142.34375,
+      "width": 575,
+      "height": 513.65625,
+      "top": 142.34375,
+      "right": 593,
+      "bottom": 656,
+      "left": 18
+    },
+    "heroCopy": {
+      "x": 18,
+      "y": 142.34375,
+      "width": 575,
+      "height": 513.65625,
+      "top": 142.34375,
+      "right": 593,
+      "bottom": 656,
+      "left": 18
+    },
+    "heroIdentityText": {
+      "x": 58,
+      "y": 641.569091796875,
+      "width": 476.15625,
+      "height": 14,
+      "top": 641.569091796875,
+      "right": 534.15625,
+      "bottom": 655.569091796875,
+      "left": 58
+    },
+    "heroNameplate": {
+      "x": 0,
+      "y": 0,
+      "width": 0,
+      "height": 0,
+      "top": 0,
+      "right": 0,
+      "bottom": 0,
+      "left": 0
+    },
+    "heroFootText": null,
+    "heroNameplateDisplay": "none",
+    "mobileEyebrowDisplay": "block",
+    "motionReady": true,
+    "heroTransform": "matrix(1.01557, 0, 0, 1.01557, 0, 0)",
+    "logoComplete": true,
+    "logoNatural": [
+      512,
+      512
+    ],
+    "bookVisual": {
+      "x": 135.5,
+      "y": 3784.703125,
+      "width": 340,
+      "height": 425,
+      "top": 3784.703125,
+      "right": 475.5,
+      "bottom": 4209.703125,
+      "left": 135.5
+    },
+    "bookCover": {
+      "x": 176.8081512451172,
+      "y": 3801.79248046875,
+      "width": 257.36810302734375,
+      "height": 372.8056640625,
+      "top": 3801.79248046875,
+      "right": 434.17625427246094,
+      "bottom": 4174.59814453125,
+      "left": 176.8081512451172
+    },
+    "credentialImage": {
+      "x": 18,
+      "y": 5168.09375,
+      "width": 575,
+      "height": 404.921875,
+      "top": 5168.09375,
+      "right": 593,
+      "bottom": 5573.015625,
+      "left": 18
+    },
+    "credentialBadge": {
+      "x": 501,
+      "y": 5495.09375,
+      "width": 80,
+      "height": 65.921875,
+      "top": 5495.09375,
+      "right": 581,
+      "bottom": 5561.015625,
+      "left": 501
+    },
+    "sectionOrder": [
+      "about",
+      "topics",
+      "method",
+      "book",
+      "events",
+      "resources",
+      "contact"
+    ],
+    "arcTrack": {
+      "x": 18,
+      "y": 2652,
+      "width": 575,
+      "height": 409.0625,
+      "top": 2652,
+      "right": 593,
+      "bottom": 3061.0625,
+      "left": 18
+    },
+    "arcStages": [
+      {
+        "lead": "Tension",
+        "left": 40,
+        "right": 593,
+        "width": 553,
+        "height": 117.6875
+      },
+      {
+        "lead": "Better language",
+        "left": 40,
+        "right": 593,
+        "width": 553,
+        "height": 117.6875
+      },
+      {
+        "lead": "Clear decision",
+        "left": 40,
+        "right": 593,
+        "width": 553,
+        "height": 117.6875
+      }
+    ],
+    "fontSizes": {
+      "heroEyebrow": 11,
+      "heroIdentity": 11,
+      "body": 16
+    },
+    "logoText": "WHAT YOU SAY NEXT?",
+    "title": "Matthew Johnson | What You Say Next",
+    "name": "qa-edge-611",
+    "overflow": 0
+  },
+  {
+    "viewport": {
+      "width": 680,
+      "height": 900
+    },
+    "scrollWidth": 680,
+    "documentHeight": 8289,
+    "brand": {
+      "x": 18,
+      "y": 15,
+      "width": 152.1875,
+      "height": 36,
+      "top": 15,
+      "right": 170.1875,
+      "bottom": 51,
+      "left": 18
+    },
+    "brandMark": {
+      "x": 18,
+      "y": 15,
+      "width": 36,
+      "height": 36,
+      "top": 15,
+      "right": 54,
+      "bottom": 51,
+      "left": 18
+    },
+    "menu": {
+      "x": 601.0625,
+      "y": 11,
+      "width": 60.9375,
+      "height": 44,
+      "top": 11,
+      "right": 662,
+      "bottom": 55,
+      "left": 601.0625
+    },
+    "hero": {
+      "x": 0,
+      "y": 0,
+      "width": 680,
+      "height": 700,
+      "top": 0,
+      "right": 680,
+      "bottom": 700,
+      "left": 0
+    },
+    "shell": {
+      "x": 18,
+      "y": 142.34375,
+      "width": 644,
+      "height": 513.65625,
+      "top": 142.34375,
+      "right": 662,
+      "bottom": 656,
+      "left": 18
+    },
+    "heroCopy": {
+      "x": 18,
+      "y": 142.34375,
+      "width": 644,
+      "height": 513.65625,
+      "top": 142.34375,
+      "right": 662,
+      "bottom": 656,
+      "left": 18
+    },
+    "heroIdentityText": {
+      "x": 58,
+      "y": 640.5977172851562,
+      "width": 476.15625,
+      "height": 14,
+      "top": 640.5977172851562,
+      "right": 534.15625,
+      "bottom": 654.5977172851562,
+      "left": 58
+    },
+    "heroNameplate": {
+      "x": 0,
+      "y": 0,
+      "width": 0,
+      "height": 0,
+      "top": 0,
+      "right": 0,
+      "bottom": 0,
+      "left": 0
+    },
+    "heroFootText": null,
+    "heroNameplateDisplay": "none",
+    "mobileEyebrowDisplay": "block",
+    "motionReady": true,
+    "heroTransform": "matrix(1.01527, 0, 0, 1.01527, 0, 0)",
+    "logoComplete": true,
+    "logoNatural": [
+      512,
+      512
+    ],
+    "bookVisual": {
+      "x": 170,
+      "y": 3745.890625,
+      "width": 340,
+      "height": 425,
+      "top": 3745.890625,
+      "right": 510,
+      "bottom": 4170.890625,
+      "left": 170
+    },
+    "bookCover": {
+      "x": 211.3081512451172,
+      "y": 3762.97998046875,
+      "width": 257.36810302734375,
+      "height": 372.8056640625,
+      "top": 3762.97998046875,
+      "right": 468.67625427246094,
+      "bottom": 4135.78564453125,
+      "left": 211.3081512451172
+    },
+    "credentialImage": {
+      "x": 18,
+      "y": 5190.234375,
+      "width": 644,
+      "height": 453.515625,
+      "top": 5190.234375,
+      "right": 662,
+      "bottom": 5643.75,
+      "left": 18
+    },
+    "credentialBadge": {
+      "x": 569.765625,
+      "y": 5565.59375,
+      "width": 80,
+      "height": 65.921875,
+      "top": 5565.59375,
+      "right": 649.765625,
+      "bottom": 5631.515625,
+      "left": 569.765625
+    },
+    "sectionOrder": [
+      "about",
+      "topics",
+      "method",
+      "book",
+      "events",
+      "resources",
+      "contact"
+    ],
+    "arcTrack": {
+      "x": 18,
+      "y": 2636.921875,
+      "width": 644,
+      "height": 409.0625,
+      "top": 2636.921875,
+      "right": 662,
+      "bottom": 3045.984375,
+      "left": 18
+    },
+    "arcStages": [
+      {
+        "lead": "Tension",
+        "left": 40,
+        "right": 662,
+        "width": 622,
+        "height": 117.6875
+      },
+      {
+        "lead": "Better language",
+        "left": 40,
+        "right": 662,
+        "width": 622,
+        "height": 117.6875
+      },
+      {
+        "lead": "Clear decision",
+        "left": 40,
+        "right": 662,
+        "width": 622,
+        "height": 117.6875
+      }
+    ],
+    "fontSizes": {
+      "heroEyebrow": 11,
+      "heroIdentity": 11,
+      "body": 16
+    },
+    "logoText": "WHAT YOU SAY NEXT?",
+    "title": "Matthew Johnson | What You Say Next",
+    "name": "qa-edge-680",
+    "overflow": 0
+  },
+  {
+    "viewport": {
+      "width": 681,
+      "height": 900
+    },
+    "scrollWidth": 681,
+    "documentHeight": 8253,
+    "brand": {
+      "x": 21.796875,
+      "y": 16,
+      "width": 174.625,
+      "height": 40,
+      "top": 16,
+      "right": 196.421875,
+      "bottom": 56,
+      "left": 21.796875
+    },
+    "brandMark": {
+      "x": 21.796875,
+      "y": 16,
+      "width": 40,
+      "height": 40,
+      "top": 16,
+      "right": 61.796875,
+      "bottom": 56,
+      "left": 21.796875
+    },
+    "menu": {
+      "x": 593.390625,
+      "y": 14,
+      "width": 65.8125,
+      "height": 44,
+      "top": 14,
+      "right": 659.203125,
+      "bottom": 58,
+      "left": 593.390625
+    },
+    "hero": {
+      "x": 0,
+      "y": 0,
+      "width": 681,
+      "height": 793.421875,
+      "top": 0,
+      "right": 681,
+      "bottom": 793.421875,
+      "left": 0
+    },
+    "shell": {
+      "x": 21.796875,
+      "y": 112,
+      "width": 637.40625,
+      "height": 633.421875,
+      "top": 112,
+      "right": 659.203125,
+      "bottom": 745.421875,
+      "left": 21.796875
+    },
+    "heroCopy": {
+      "x": 21.796875,
+      "y": 112,
+      "width": 382.4375,
+      "height": 633.421875,
+      "top": 112,
+      "right": 404.234375,
+      "bottom": 745.421875,
+      "left": 21.796875
+    },
+    "heroIdentityText": {
+      "x": 81.796875,
+      "y": 717.1493530273438,
+      "width": 271.515625,
+      "height": 30,
+      "top": 717.1493530273438,
+      "right": 353.3125,
+      "bottom": 747.1493530273438,
+      "left": 81.796875
+    },
+    "heroNameplate": {
+      "x": 416.0625,
+      "y": 715.001708984375,
+      "width": 243.15625,
+      "height": 53.671875,
+      "top": 715.001708984375,
+      "right": 659.21875,
+      "bottom": 768.673583984375,
+      "left": 416.0625
+    },
+    "heroFootText": null,
+    "heroNameplateDisplay": "grid",
+    "mobileEyebrowDisplay": "none",
+    "motionReady": true,
+    "heroTransform": "matrix(1.01563, 0, 0, 1.01563, 0, 0)",
+    "logoComplete": true,
+    "logoNatural": [
+      512,
+      512
+    ],
+    "bookVisual": {
+      "x": 130.5,
+      "y": 3785.78125,
+      "width": 420,
+      "height": 525,
+      "top": 3785.78125,
+      "right": 550.5,
+      "bottom": 4310.78125,
+      "left": 130.5
+    },
+    "bookCover": {
+      "x": 181.53250122070312,
+      "y": 3806.8916015625,
+      "width": 317.91937255859375,
+      "height": 460.513671875,
+      "top": 3806.8916015625,
+      "right": 499.4518737792969,
+      "bottom": 4267.4052734375,
+      "left": 181.53250122070312
+    },
+    "credentialImage": {
+      "x": 21.796875,
+      "y": 5329.0625,
+      "width": 637.40625,
+      "height": 448.875,
+      "top": 5329.0625,
+      "right": 659.203125,
+      "bottom": 5777.9375,
+      "left": 21.796875
+    },
+    "credentialBadge": {
+      "x": 566.953125,
+      "y": 5699.765625,
+      "width": 80,
+      "height": 65.921875,
+      "top": 5699.765625,
+      "right": 646.953125,
+      "bottom": 5765.6875,
+      "left": 566.953125
+    },
+    "sectionOrder": [
+      "about",
+      "topics",
+      "method",
+      "book",
+      "events",
+      "resources",
+      "contact"
+    ],
+    "arcTrack": {
+      "x": 21.796875,
+      "y": 2719.953125,
+      "width": 637.40625,
+      "height": 446.375,
+      "top": 2719.953125,
+      "right": 659.203125,
+      "bottom": 3166.328125,
+      "left": 21.796875
+    },
+    "arcStages": [
+      {
+        "lead": "Tension",
+        "left": 47.796875,
+        "right": 659.203125,
+        "width": 611.40625,
+        "height": 126.09375
+      },
+      {
+        "lead": "Better language",
+        "left": 47.796875,
+        "right": 659.203125,
+        "width": 611.40625,
+        "height": 126.09375
+      },
+      {
+        "lead": "Clear decision",
+        "left": 47.796875,
+        "right": 659.203125,
+        "width": 611.40625,
+        "height": 126.09375
+      }
+    ],
+    "fontSizes": {
+      "heroEyebrow": 12,
+      "heroIdentity": 12,
+      "body": 17
+    },
+    "logoText": "WHAT YOU SAY NEXT?\nCHANGES EVERYTHING",
+    "title": "Matthew Johnson | What You Say Next",
+    "name": "qa-edge-681",
+    "overflow": 0
+  },
+  {
+    "viewport": {
+      "width": 768,
+      "height": 1024
+    },
+    "scrollWidth": 768,
+    "documentHeight": 8273,
+    "brand": {
+      "x": 24.578125,
+      "y": 16,
+      "width": 174.625,
+      "height": 40,
+      "top": 16,
+      "right": 199.203125,
+      "bottom": 56,
+      "left": 24.578125
+    },
+    "brandMark": {
+      "x": 24.578125,
+      "y": 16,
+      "width": 40,
+      "height": 40,
+      "top": 16,
+      "right": 64.578125,
+      "bottom": 56,
+      "left": 24.578125
+    },
+    "menu": {
+      "x": 677.609375,
+      "y": 14,
+      "width": 65.8125,
+      "height": 44,
+      "top": 14,
+      "right": 743.421875,
+      "bottom": 58,
+      "left": 677.609375
+    },
+    "hero": {
+      "x": 0,
+      "y": 0,
+      "width": 768,
+      "height": 760,
+      "top": 0,
+      "right": 768,
+      "bottom": 760,
+      "left": 0
+    },
+    "shell": {
+      "x": 24.578125,
+      "y": 122.109375,
+      "width": 718.84375,
+      "height": 584.140625,
+      "top": 122.109375,
+      "right": 743.421875,
+      "bottom": 706.25,
+      "left": 24.578125
+    },
+    "heroCopy": {
+      "x": 24.578125,
+      "y": 122.109375,
+      "width": 431.296875,
+      "height": 584.140625,
+      "top": 122.109375,
+      "right": 455.875,
+      "bottom": 706.25,
+      "left": 24.578125
+    },
+    "heroIdentityText": {
+      "x": 84.578125,
+      "y": 677.7559814453125,
+      "width": 324.515625,
+      "height": 30,
+      "top": 677.7559814453125,
+      "right": 409.09375,
+      "bottom": 707.7559814453125,
+      "left": 84.578125
+    },
+    "heroNameplate": {
+      "x": 500.28125,
+      "y": 681.1862182617188,
+      "width": 243.15625,
+      "height": 53.671875,
+      "top": 681.1862182617188,
+      "right": 743.4375,
+      "bottom": 734.8580932617188,
+      "left": 500.28125
+    },
+    "heroFootText": null,
+    "heroNameplateDisplay": "grid",
+    "mobileEyebrowDisplay": "none",
+    "motionReady": true,
+    "heroTransform": "matrix(1.01557, 0, 0, 1.01557, 0, 0)",
+    "logoComplete": true,
+    "logoNatural": [
+      512,
+      512
+    ],
+    "bookVisual": {
+      "x": 174,
+      "y": 3726.6875,
+      "width": 420,
+      "height": 525,
+      "top": 3726.6875,
+      "right": 594,
+      "bottom": 4251.6875,
+      "left": 174
+    },
+    "bookCover": {
+      "x": 225.03250122070312,
+      "y": 3747.7978515625,
+      "width": 317.9194030761719,
+      "height": 460.513671875,
+      "top": 3747.7978515625,
+      "right": 542.951904296875,
+      "bottom": 4208.3115234375,
+      "left": 225.03250122070312
+    },
+    "credentialImage": {
+      "x": 24.578125,
+      "y": 5346.8125,
+      "width": 718.84375,
+      "height": 506.21875,
+      "top": 5346.8125,
+      "right": 743.421875,
+      "bottom": 5853.03125,
+      "left": 24.578125
+    },
+    "credentialBadge": {
+      "x": 649.609375,
+      "y": 5773.296875,
+      "width": 80,
+      "height": 65.921875,
+      "top": 5773.296875,
+      "right": 729.609375,
+      "bottom": 5839.21875,
+      "left": 649.609375
+    },
+    "sectionOrder": [
+      "about",
+      "topics",
+      "method",
+      "book",
+      "events",
+      "resources",
+      "contact"
+    ],
+    "arcTrack": {
+      "x": 24.578125,
+      "y": 2675.015625,
+      "width": 718.84375,
+      "height": 455.0625,
+      "top": 2675.015625,
+      "right": 743.421875,
+      "bottom": 3130.078125,
+      "left": 24.578125
+    },
+    "arcStages": [
+      {
+        "lead": "Tension",
+        "left": 50.578125,
+        "right": 743.421875,
+        "width": 692.84375,
+        "height": 126.09375
+      },
+      {
+        "lead": "Better language",
+        "left": 50.578125,
+        "right": 743.421875,
+        "width": 692.84375,
+        "height": 126.09375
+      },
+      {
+        "lead": "Clear decision",
+        "left": 50.578125,
+        "right": 743.421875,
+        "width": 692.84375,
+        "height": 126.09375
+      }
+    ],
+    "fontSizes": {
+      "heroEyebrow": 12,
+      "heroIdentity": 12,
+      "body": 17
+    },
+    "logoText": "WHAT YOU SAY NEXT?\nCHANGES EVERYTHING",
+    "title": "Matthew Johnson | What You Say Next",
+    "name": "qa-tablet-768",
+    "overflow": 0
+  },
+  {
+    "viewport": {
+      "width": 899,
+      "height": 900
+    },
+    "scrollWidth": 899,
+    "documentHeight": 8562,
+    "brand": {
+      "x": 28.78125,
+      "y": 16,
+      "width": 174.625,
+      "height": 40,
+      "top": 16,
+      "right": 203.40625,
+      "bottom": 56,
+      "left": 28.78125
+    },
+    "brandMark": {
+      "x": 28.78125,
+      "y": 16,
+      "width": 40,
+      "height": 40,
+      "top": 16,
+      "right": 68.78125,
+      "bottom": 56,
+      "left": 28.78125
+    },
+    "menu": {
+      "x": 804.421875,
+      "y": 14,
+      "width": 65.8125,
+      "height": 44,
+      "top": 14,
+      "right": 870.234375,
+      "bottom": 58,
+      "left": 804.421875
+    },
+    "hero": {
+      "x": 0,
+      "y": 0,
+      "width": 899,
+      "height": 771.625,
+      "top": 0,
+      "right": 899,
+      "bottom": 771.625,
+      "left": 0
+    },
+    "shell": {
+      "x": 28.78125,
+      "y": 112,
+      "width": 841.453125,
+      "height": 596.703125,
+      "top": 112,
+      "right": 870.234375,
+      "bottom": 708.703125,
+      "left": 28.78125
+    },
+    "heroCopy": {
+      "x": 28.78125,
+      "y": 112,
+      "width": 504.859375,
+      "height": 596.703125,
+      "top": 112,
+      "right": 533.640625,
+      "bottom": 708.703125,
+      "left": 28.78125
+    },
+    "heroIdentityText": {
+      "x": 88.78125,
+      "y": 679.6881103515625,
+      "width": 440.453125,
+      "height": 30,
+      "top": 679.6881103515625,
+      "right": 529.234375,
+      "bottom": 709.6881103515625,
+      "left": 88.78125
+    },
+    "heroNameplate": {
+      "x": 627.078125,
+      "y": 691.8780517578125,
+      "width": 243.15625,
+      "height": 53.671875,
+      "top": 691.8780517578125,
+      "right": 870.234375,
+      "bottom": 745.5499267578125,
+      "left": 627.078125
+    },
+    "heroFootText": null,
+    "heroNameplateDisplay": "grid",
+    "mobileEyebrowDisplay": "none",
+    "motionReady": true,
+    "heroTransform": "matrix(1.01542, 0, 0, 1.01542, 0, 0)",
+    "logoComplete": true,
+    "logoNatural": [
+      512,
+      512
+    ],
+    "bookVisual": {
+      "x": 239.484375,
+      "y": 3760.453125,
+      "width": 420,
+      "height": 525,
+      "top": 3760.453125,
+      "right": 659.484375,
+      "bottom": 4285.453125,
+      "left": 239.484375
+    },
+    "bookCover": {
+      "x": 290.5168762207031,
+      "y": 3781.5634765625,
+      "width": 317.9194030761719,
+      "height": 460.513671875,
+      "top": 3781.5634765625,
+      "right": 608.436279296875,
+      "bottom": 4242.0771484375,
+      "left": 290.5168762207031
+    },
+    "credentialImage": {
+      "x": 28.765625,
+      "y": 5488.234375,
+      "width": 841.453125,
+      "height": 592.5625,
+      "top": 5488.234375,
+      "right": 870.21875,
+      "bottom": 6080.796875,
+      "left": 28.765625
+    },
+    "credentialBadge": {
+      "x": 774.046875,
+      "y": 5998.703125,
+      "width": 80,
+      "height": 65.921875,
+      "top": 5998.703125,
+      "right": 854.046875,
+      "bottom": 6064.625,
+      "left": 774.046875
+    },
+    "sectionOrder": [
+      "about",
+      "topics",
+      "method",
+      "book",
+      "events",
+      "resources",
+      "contact"
+    ],
+    "arcTrack": {
+      "x": 28.765625,
+      "y": 2681.984375,
+      "width": 841.453125,
+      "height": 464.4375,
+      "top": 2681.984375,
+      "right": 870.21875,
+      "bottom": 3146.421875,
+      "left": 28.765625
+    },
+    "arcStages": [
+      {
+        "lead": "Tension",
+        "left": 54.765625,
+        "right": 870.21875,
+        "width": 815.453125,
+        "height": 126.8125
+      },
+      {
+        "lead": "Better language",
+        "left": 54.765625,
+        "right": 870.21875,
+        "width": 815.453125,
+        "height": 126.8125
+      },
+      {
+        "lead": "Clear decision",
+        "left": 54.765625,
+        "right": 870.21875,
+        "width": 815.453125,
+        "height": 126.8125
+      }
+    ],
+    "fontSizes": {
+      "heroEyebrow": 12,
+      "heroIdentity": 12,
+      "body": 17
+    },
+    "logoText": "WHAT YOU SAY NEXT?\nCHANGES EVERYTHING",
+    "title": "Matthew Johnson | What You Say Next",
+    "name": "qa-edge-899",
+    "overflow": 0
+  },
+  {
+    "viewport": {
+      "width": 900,
+      "height": 900
+    },
+    "scrollWidth": 900,
+    "documentHeight": 8566,
+    "brand": {
+      "x": 28.8125,
+      "y": 16,
+      "width": 174.625,
+      "height": 40,
+      "top": 16,
+      "right": 203.4375,
+      "bottom": 56,
+      "left": 28.8125
+    },
+    "brandMark": {
+      "x": 28.8125,
+      "y": 16,
+      "width": 40,
+      "height": 40,
+      "top": 16,
+      "right": 68.8125,
+      "bottom": 56,
+      "left": 28.8125
+    },
+    "menu": {
+      "x": 805.390625,
+      "y": 14,
+      "width": 65.8125,
+      "height": 44,
+      "top": 14,
+      "right": 871.203125,
+      "bottom": 58,
+      "left": 805.390625
+    },
+    "hero": {
+      "x": 0,
+      "y": 0,
+      "width": 900,
+      "height": 771.953125,
+      "top": 0,
+      "right": 900,
+      "bottom": 771.953125,
+      "left": 0
+    },
+    "shell": {
+      "x": 28.8125,
+      "y": 112,
+      "width": 842.390625,
+      "height": 596.953125,
+      "top": 112,
+      "right": 871.203125,
+      "bottom": 708.953125,
+      "left": 28.8125
+    },
+    "heroCopy": {
+      "x": 28.8125,
+      "y": 112,
+      "width": 505.421875,
+      "height": 596.953125,
+      "top": 112,
+      "right": 534.234375,
+      "bottom": 708.953125,
+      "left": 28.8125
+    },
+    "heroIdentityText": {
+      "x": 88.8125,
+      "y": 679.4881591796875,
+      "width": 440.453125,
+      "height": 30,
+      "top": 679.4881591796875,
+      "right": 529.265625,
+      "bottom": 709.4881591796875,
+      "left": 88.8125
+    },
+    "heroNameplate": {
+      "x": 628.046875,
+      "y": 691.386474609375,
+      "width": 243.15625,
+      "height": 53.671875,
+      "top": 691.386474609375,
+      "right": 871.203125,
+      "bottom": 745.058349609375,
+      "left": 628.046875
+    },
+    "heroFootText": null,
+    "heroNameplateDisplay": "grid",
+    "mobileEyebrowDisplay": "none",
+    "motionReady": true,
+    "heroTransform": "matrix(1.01527, 0, 0, 1.01527, 0, 0)",
+    "logoComplete": true,
+    "logoNatural": [
+      512,
+      512
+    ],
+    "bookVisual": {
+      "x": 239.984375,
+      "y": 3761.5625,
+      "width": 420,
+      "height": 525,
+      "top": 3761.5625,
+      "right": 659.984375,
+      "bottom": 4286.5625,
+      "left": 239.984375
+    },
+    "bookCover": {
+      "x": 291.0168762207031,
+      "y": 3782.6728515625,
+      "width": 317.9194030761719,
+      "height": 460.513671875,
+      "top": 3782.6728515625,
+      "right": 608.936279296875,
+      "bottom": 4243.1865234375,
+      "left": 291.0168762207031
+    },
+    "credentialImage": {
+      "x": 28.796875,
+      "y": 5490.5,
+      "width": 842.390625,
+      "height": 593.21875,
+      "top": 5490.5,
+      "right": 871.1875,
+      "bottom": 6083.71875,
+      "left": 28.796875
+    },
+    "credentialBadge": {
+      "x": 775,
+      "y": 6001.609375,
+      "width": 80,
+      "height": 65.921875,
+      "top": 6001.609375,
+      "right": 855,
+      "bottom": 6067.53125,
+      "left": 775
+    },
+    "sectionOrder": [
+      "about",
+      "topics",
+      "method",
+      "book",
+      "events",
+      "resources",
+      "contact"
+    ],
+    "arcTrack": {
+      "x": 28.796875,
+      "y": 2682.8125,
+      "width": 842.390625,
+      "height": 464.53125,
+      "top": 2682.8125,
+      "right": 871.1875,
+      "bottom": 3147.34375,
+      "left": 28.796875
+    },
+    "arcStages": [
+      {
+        "lead": "Tension",
+        "left": 54.796875,
+        "right": 871.1875,
+        "width": 816.390625,
+        "height": 126.84375
+      },
+      {
+        "lead": "Better language",
+        "left": 54.796875,
+        "right": 871.1875,
+        "width": 816.390625,
+        "height": 126.84375
+      },
+      {
+        "lead": "Clear decision",
+        "left": 54.796875,
+        "right": 871.1875,
+        "width": 816.390625,
+        "height": 126.84375
+      }
+    ],
+    "fontSizes": {
+      "heroEyebrow": 12,
+      "heroIdentity": 12,
+      "body": 17
+    },
+    "logoText": "WHAT YOU SAY NEXT?\nCHANGES EVERYTHING",
+    "title": "Matthew Johnson | What You Say Next",
+    "name": "qa-edge-900",
+    "overflow": 0
+  },
+  {
+    "viewport": {
+      "width": 901,
+      "height": 900
+    },
+    "scrollWidth": 901,
+    "documentHeight": 6465,
+    "brand": {
+      "x": 28.84375,
+      "y": 20,
+      "width": 204.25,
+      "height": 48,
+      "top": 20,
+      "right": 233.09375,
+      "bottom": 68,
+      "left": 28.84375
+    },
+    "brandMark": {
+      "x": 28.84375,
+      "y": 20,
+      "width": 48,
+      "height": 48,
+      "top": 20,
+      "right": 76.84375,
+      "bottom": 68,
+      "left": 28.84375
+    },
+    "menu": {
+      "x": 0,
+      "y": 0,
+      "width": 0,
+      "height": 0,
+      "top": 0,
+      "right": 0,
+      "bottom": 0,
+      "left": 0
+    },
+    "hero": {
+      "x": 0,
+      "y": 0,
+      "width": 901,
+      "height": 801.203125,
+      "top": 0,
+      "right": 901,
+      "bottom": 801.203125,
+      "left": 0
+    },
+    "shell": {
+      "x": 28.84375,
+      "y": 144,
+      "width": 843.328125,
+      "height": 597.203125,
+      "top": 144,
+      "right": 872.171875,
+      "bottom": 741.203125,
+      "left": 28.84375
+    },
+    "heroCopy": {
+      "x": 28.84375,
+      "y": 144,
+      "width": 522.859375,
+      "height": 597.203125,
+      "top": 144,
+      "right": 551.703125,
+      "bottom": 741.203125,
+      "left": 28.84375
+    },
+    "heroIdentityText": {
+      "x": 88.84375,
+      "y": 712.513427734375,
+      "width": 440.453125,
+      "height": 30,
+      "top": 712.513427734375,
+      "right": 529.296875,
+      "bottom": 742.513427734375,
+      "left": 88.84375
+    },
+    "heroNameplate": {
+      "x": 629.015625,
+      "y": 712.0401611328125,
+      "width": 243.15625,
+      "height": 53.671875,
+      "top": 712.0401611328125,
+      "right": 872.171875,
+      "bottom": 765.7120361328125,
+      "left": 629.015625
+    },
+    "heroFootText": {
+      "x": 28.828125,
+      "y": 761.203125,
+      "width": 315.453125,
+      "height": 14,
+      "top": 761.203125,
+      "right": 344.28125,
+      "bottom": 775.203125,
+      "left": 28.828125
+    },
+    "heroNameplateDisplay": "grid",
+    "mobileEyebrowDisplay": "none",
+    "motionReady": true,
+    "heroTransform": "matrix(1.01551, 0, 0, 1.01551, 0, 0)",
+    "logoComplete": true,
+    "logoNatural": [
+      512,
+      512
+    ],
+    "bookVisual": {
+      "x": 28.828125,
+      "y": 2857.140625,
+      "width": 384.90625,
+      "height": 481.125,
+      "top": 2857.140625,
+      "right": 413.734375,
+      "bottom": 3338.265625,
+      "left": 28.828125
+    },
+    "bookCover": {
+      "x": 75.58760070800781,
+      "y": 2876.4775390625,
+      "width": 291.35601806640625,
+      "height": 422.029296875,
+      "top": 2876.4775390625,
+      "right": 366.94361877441406,
+      "bottom": 3298.5068359375,
+      "left": 75.58760070800781
+    },
+    "credentialImage": {
+      "x": 28.828125,
+      "y": 4245.015625,
+      "width": 384.90625,
+      "height": 271.046875,
+      "top": 4245.015625,
+      "right": 413.734375,
+      "bottom": 4516.0625,
+      "left": 28.828125
+    },
+    "credentialBadge": {
+      "x": 317.53125,
+      "y": 4433.9375,
+      "width": 80,
+      "height": 65.921875,
+      "top": 4433.9375,
+      "right": 397.53125,
+      "bottom": 4499.859375,
+      "left": 317.53125
+    },
+    "sectionOrder": [
+      "about",
+      "topics",
+      "method",
+      "book",
+      "events",
+      "resources",
+      "contact"
+    ],
+    "arcTrack": {
+      "x": 28.828125,
+      "y": 2427.84375,
+      "width": 843.328125,
+      "height": 230.125,
+      "top": 2427.84375,
+      "right": 872.15625,
+      "bottom": 2657.96875,
+      "left": 28.828125
+    },
+    "arcStages": [
+      {
+        "lead": "Tension",
+        "left": 28.828125,
+        "right": 289.515625,
+        "width": 260.6875,
+        "height": 201.125
+      },
+      {
+        "lead": "Better language",
+        "left": 320.140625,
+        "right": 580.828125,
+        "width": 260.6875,
+        "height": 201.125
+      },
+      {
+        "lead": "Clear decision",
+        "left": 611.453125,
+        "right": 872.15625,
+        "width": 260.703125,
+        "height": 201.125
+      }
+    ],
+    "fontSizes": {
+      "heroEyebrow": 12,
+      "heroIdentity": 12,
+      "body": 17
+    },
+    "logoText": "WHAT YOU SAY NEXT?\nCHANGES EVERYTHING",
+    "title": "Matthew Johnson | What You Say Next",
+    "name": "qa-edge-901",
+    "overflow": 0
+  },
+  {
+    "viewport": {
+      "width": 902,
+      "height": 900
+    },
+    "scrollWidth": 902,
+    "documentHeight": 6466,
+    "brand": {
+      "x": 28.875,
+      "y": 20,
+      "width": 204.25,
+      "height": 48,
+      "top": 20,
+      "right": 233.125,
+      "bottom": 68,
+      "left": 28.875
+    },
+    "brandMark": {
+      "x": 28.875,
+      "y": 20,
+      "width": 48,
+      "height": 48,
+      "top": 20,
+      "right": 76.875,
+      "bottom": 68,
+      "left": 28.875
+    },
+    "menu": {
+      "x": 0,
+      "y": 0,
+      "width": 0,
+      "height": 0,
+      "top": 0,
+      "right": 0,
+      "bottom": 0,
+      "left": 0
+    },
+    "hero": {
+      "x": 0,
+      "y": 0,
+      "width": 902,
+      "height": 801.453125,
+      "top": 0,
+      "right": 902,
+      "bottom": 801.453125,
+      "left": 0
+    },
+    "shell": {
+      "x": 28.875,
+      "y": 144,
+      "width": 844.265625,
+      "height": 597.453125,
+      "top": 144,
+      "right": 873.140625,
+      "bottom": 741.453125,
+      "left": 28.875
+    },
+    "heroCopy": {
+      "x": 28.875,
+      "y": 144,
+      "width": 523.4375,
+      "height": 597.453125,
+      "top": 144,
+      "right": 552.3125,
+      "bottom": 741.453125,
+      "left": 28.875
+    },
+    "heroIdentityText": {
+      "x": 88.875,
+      "y": 711.9880981445312,
+      "width": 440.453125,
+      "height": 30,
+      "top": 711.9880981445312,
+      "right": 529.328125,
+      "bottom": 741.9880981445312,
+      "left": 88.875
+    },
+    "heroNameplate": {
+      "x": 629.984375,
+      "y": 710.8862915039062,
+      "width": 243.15625,
+      "height": 53.671875,
+      "top": 710.8862915039062,
+      "right": 873.140625,
+      "bottom": 764.5581665039062,
+      "left": 629.984375
+    },
+    "heroFootText": {
+      "x": 28.859375,
+      "y": 761.453125,
+      "width": 315.453125,
+      "height": 14,
+      "top": 761.453125,
+      "right": 344.3125,
+      "bottom": 775.453125,
+      "left": 28.859375
+    },
+    "heroNameplateDisplay": "grid",
+    "mobileEyebrowDisplay": "none",
+    "motionReady": true,
+    "heroTransform": "matrix(1.01527, 0, 0, 1.01527, 0, 0)",
+    "logoComplete": true,
+    "logoNatural": [
+      512,
+      512
+    ],
+    "bookVisual": {
+      "x": 28.859375,
+      "y": 2857.234375,
+      "width": 385.328125,
+      "height": 481.65625,
+      "top": 2857.234375,
+      "right": 414.1875,
+      "bottom": 3338.890625,
+      "left": 28.859375
+    },
+    "bookCover": {
+      "x": 75.67353820800781,
+      "y": 2876.597412109375,
+      "width": 291.6685791015625,
+      "height": 422.49267578125,
+      "top": 2876.597412109375,
+      "right": 367.3421173095703,
+      "bottom": 3299.090087890625,
+      "left": 75.67353820800781
+    },
+    "credentialImage": {
+      "x": 28.859375,
+      "y": 4245.828125,
+      "width": 385.328125,
+      "height": 271.34375,
+      "top": 4245.828125,
+      "right": 414.1875,
+      "bottom": 4517.171875,
+      "left": 28.859375
+    },
+    "credentialBadge": {
+      "x": 317.953125,
+      "y": 4435.015625,
+      "width": 80,
+      "height": 65.921875,
+      "top": 4435.015625,
+      "right": 397.953125,
+      "bottom": 4500.9375,
+      "left": 317.953125
+    },
+    "sectionOrder": [
+      "about",
+      "topics",
+      "method",
+      "book",
+      "events",
+      "resources",
+      "contact"
+    ],
+    "arcTrack": {
+      "x": 28.859375,
+      "y": 2428.171875,
+      "width": 844.265625,
+      "height": 230.15625,
+      "top": 2428.171875,
+      "right": 873.125,
+      "bottom": 2658.328125,
+      "left": 28.859375
+    },
+    "arcStages": [
+      {
+        "lead": "Tension",
+        "left": 28.859375,
+        "right": 289.84375,
+        "width": 260.984375,
+        "height": 201.15625
+      },
+      {
+        "lead": "Better language",
+        "left": 320.5,
+        "right": 581.484375,
+        "width": 260.984375,
+        "height": 201.15625
+      },
+      {
+        "lead": "Clear decision",
+        "left": 612.140625,
+        "right": 873.125,
+        "width": 260.984375,
+        "height": 201.15625
+      }
+    ],
+    "fontSizes": {
+      "heroEyebrow": 12,
+      "heroIdentity": 12,
+      "body": 17
+    },
+    "logoText": "WHAT YOU SAY NEXT?\nCHANGES EVERYTHING",
+    "title": "Matthew Johnson | What You Say Next",
+    "name": "qa-edge-902",
+    "overflow": 0
+  },
+  {
+    "viewport": {
+      "width": 1024,
+      "height": 900
+    },
+    "scrollWidth": 1024,
+    "documentHeight": 6659,
+    "brand": {
+      "x": 32.78125,
+      "y": 20,
+      "width": 204.25,
+      "height": 48,
+      "top": 20,
+      "right": 237.03125,
+      "bottom": 68,
+      "left": 32.78125
+    },
+    "brandMark": {
+      "x": 32.78125,
+      "y": 20,
+      "width": 48,
+      "height": 48,
+      "top": 20,
+      "right": 80.78125,
+      "bottom": 68,
+      "left": 32.78125
+    },
+    "menu": {
+      "x": 0,
+      "y": 0,
+      "width": 0,
+      "height": 0,
+      "top": 0,
+      "right": 0,
+      "bottom": 0,
+      "left": 0
+    },
+    "hero": {
+      "x": 0,
+      "y": 0,
+      "width": 1024,
+      "height": 792,
+      "top": 0,
+      "right": 1024,
+      "bottom": 792,
+      "left": 0
+    },
+    "shell": {
+      "x": 32.78125,
+      "y": 197.53125,
+      "width": 958.453125,
+      "height": 533.03125,
+      "top": 197.53125,
+      "right": 991.234375,
+      "bottom": 730.5625,
+      "left": 32.78125
+    },
+    "heroCopy": {
+      "x": 32.78125,
+      "y": 197.53125,
+      "width": 594.234375,
+      "height": 533.03125,
+      "top": 197.53125,
+      "right": 627.015625,
+      "bottom": 730.5625,
+      "left": 32.78125
+    },
+    "heroIdentityText": {
+      "x": 92.78125,
+      "y": 702.2901000976562,
+      "width": 465.671875,
+      "height": 30,
+      "top": 702.2901000976562,
+      "right": 558.453125,
+      "bottom": 732.2901000976562,
+      "left": 92.78125
+    },
+    "heroNameplate": {
+      "x": 742.71875,
+      "y": 701.0331420898438,
+      "width": 248.515625,
+      "height": 56.21875,
+      "top": 701.0331420898438,
+      "right": 991.234375,
+      "bottom": 757.2518920898438,
+      "left": 742.71875
+    },
+    "heroFootText": {
+      "x": 32.765625,
+      "y": 752,
+      "width": 315.453125,
+      "height": 14,
+      "top": 752,
+      "right": 348.21875,
+      "bottom": 766,
+      "left": 32.765625
+    },
+    "heroNameplateDisplay": "grid",
+    "mobileEyebrowDisplay": "none",
+    "motionReady": true,
+    "heroTransform": "matrix(1.01563, 0, 0, 1.01563, 0, 0)",
+    "logoComplete": true,
+    "logoNatural": [
+      512,
+      512
+    ],
+    "bookVisual": {
+      "x": 32.765625,
+      "y": 2849.8125,
+      "width": 437.4375,
+      "height": 546.796875,
+      "top": 2849.8125,
+      "right": 470.203125,
+      "bottom": 3396.609375,
+      "left": 32.765625
+    },
+    "bookCover": {
+      "x": 85.9130859375,
+      "y": 2871.78759765625,
+      "width": 331.126953125,
+      "height": 479.6435546875,
+      "top": 2871.78759765625,
+      "right": 417.0400390625,
+      "bottom": 3351.43115234375,
+      "left": 85.9130859375
+    },
+    "credentialImage": {
+      "x": 32.765625,
+      "y": 4354.6875,
+      "width": 437.4375,
+      "height": 308.046875,
+      "top": 4354.6875,
+      "right": 470.203125,
+      "bottom": 4662.734375,
+      "left": 32.765625
+    },
+    "credentialBadge": {
+      "x": 365.765625,
+      "y": 4573.421875,
+      "width": 86.015625,
+      "height": 70.890625,
+      "top": 4573.421875,
+      "right": 451.78125,
+      "bottom": 4644.3125,
+      "left": 365.765625
+    },
+    "sectionOrder": [
+      "about",
+      "topics",
+      "method",
+      "book",
+      "events",
+      "resources",
+      "contact"
+    ],
+    "arcTrack": {
+      "x": 32.765625,
+      "y": 2431.59375,
+      "width": 958.453125,
+      "height": 236.59375,
+      "top": 2431.59375,
+      "right": 991.21875,
+      "bottom": 2668.1875,
+      "left": 32.765625
+    },
+    "arcStages": [
+      {
+        "lead": "Tension",
+        "left": 32.765625,
+        "right": 329.03125,
+        "width": 296.265625,
+        "height": 204.875
+      },
+      {
+        "lead": "Better language",
+        "left": 363.84375,
+        "right": 660.125,
+        "width": 296.28125,
+        "height": 204.875
+      },
+      {
+        "lead": "Clear decision",
+        "left": 694.9375,
+        "right": 991.203125,
+        "width": 296.265625,
+        "height": 204.875
+      }
+    ],
+    "fontSizes": {
+      "heroEyebrow": 12,
+      "heroIdentity": 12,
+      "body": 17
+    },
+    "logoText": "WHAT YOU SAY NEXT?\nCHANGES EVERYTHING",
+    "title": "Matthew Johnson | What You Say Next",
+    "name": "qa-tablet-1024",
+    "overflow": 0
+  },
+  {
+    "viewport": {
+      "width": 1440,
+      "height": 1100
+    },
+    "scrollWidth": 1440,
+    "documentHeight": 8055,
+    "brand": {
+      "x": 46.09375,
+      "y": 20,
+      "width": 204.25,
+      "height": 48,
+      "top": 20,
+      "right": 250.34375,
+      "bottom": 68,
+      "left": 46.09375
+    },
+    "brandMark": {
+      "x": 46.09375,
+      "y": 20,
+      "width": 48,
+      "height": 48,
+      "top": 20,
+      "right": 94.09375,
+      "bottom": 68,
+      "left": 46.09375
+    },
+    "menu": {
+      "x": 0,
+      "y": 0,
+      "width": 0,
+      "height": 0,
+      "top": 0,
+      "right": 0,
+      "bottom": 0,
+      "left": 0
+    },
+    "hero": {
+      "x": 0,
+      "y": 0,
+      "width": 1440,
+      "height": 900,
+      "top": 0,
+      "right": 1440,
+      "bottom": 900,
+      "left": 0
+    },
+    "shell": {
+      "x": 46.09375,
+      "y": 179.53125,
+      "width": 1347.828125,
+      "height": 634.078125,
+      "top": 179.53125,
+      "right": 1393.921875,
+      "bottom": 813.609375,
+      "left": 46.09375
+    },
+    "heroCopy": {
+      "x": 46.09375,
+      "y": 179.53125,
+      "width": 700,
+      "height": 634.078125,
+      "top": 179.53125,
+      "right": 746.09375,
+      "bottom": 813.609375,
+      "left": 46.09375
+    },
+    "heroIdentityText": {
+      "x": 106.09375,
+      "y": 799.9193115234375,
+      "width": 542.484375,
+      "height": 15,
+      "top": 799.9193115234375,
+      "right": 648.578125,
+      "bottom": 814.9193115234375,
+      "left": 106.09375
+    },
+    "heroNameplate": {
+      "x": 1044.453125,
+      "y": 793.9925537109375,
+      "width": 349.46875,
+      "height": 70.515625,
+      "top": 793.9925537109375,
+      "right": 1393.921875,
+      "bottom": 864.5081787109375,
+      "left": 1044.453125
+    },
+    "heroFootText": {
+      "x": 46.078125,
+      "y": 860,
+      "width": 315.453125,
+      "height": 14,
+      "top": 860,
+      "right": 361.53125,
+      "bottom": 874,
+      "left": 46.078125
+    },
+    "heroNameplateDisplay": "grid",
+    "mobileEyebrowDisplay": "none",
+    "motionReady": true,
+    "heroTransform": "matrix(1.01551, 0, 0, 1.01551, 0, 0)",
+    "logoComplete": true,
+    "logoNatural": [
+      512,
+      512
+    ],
+    "bookVisual": {
+      "x": 110.84375,
+      "y": 3310.859375,
+      "width": 460,
+      "height": 575,
+      "top": 3310.859375,
+      "right": 570.84375,
+      "bottom": 3885.859375,
+      "left": 110.84375
+    },
+    "bookCover": {
+      "x": 166.73062133789062,
+      "y": 3333.98046875,
+      "width": 348.1950378417969,
+      "height": 504.3671875,
+      "top": 3333.98046875,
+      "right": 514.9256591796875,
+      "bottom": 3838.34765625,
+      "left": 166.73062133789062
+    },
+    "credentialImage": {
+      "x": 46.078125,
+      "y": 5207.609375,
+      "width": 589.53125,
+      "height": 415.15625,
+      "top": 5207.609375,
+      "right": 635.609375,
+      "bottom": 5622.765625,
+      "left": 46.078125
+    },
+    "credentialBadge": {
+      "x": 492.65625,
+      "y": 5501.09375,
+      "width": 120.953125,
+      "height": 99.671875,
+      "top": 5501.09375,
+      "right": 613.609375,
+      "bottom": 5600.765625,
+      "left": 492.65625
+    },
+    "sectionOrder": [
+      "about",
+      "topics",
+      "method",
+      "book",
+      "events",
+      "resources",
+      "contact"
+    ],
+    "arcTrack": {
+      "x": 46.078125,
+      "y": 2831,
+      "width": 1347.828125,
+      "height": 234.984375,
+      "top": 2831,
+      "right": 1393.90625,
+      "bottom": 3065.984375,
+      "left": 46.078125
+    },
+    "arcStages": [
+      {
+        "lead": "Tension",
+        "left": 46.078125,
+        "right": 462.71875,
+        "width": 416.640625,
+        "height": 190.796875
+      },
+      {
+        "lead": "Better language",
+        "left": 511.671875,
+        "right": 928.3125,
+        "width": 416.640625,
+        "height": 190.796875
+      },
+      {
+        "lead": "Clear decision",
+        "left": 977.265625,
+        "right": 1393.90625,
+        "width": 416.640625,
+        "height": 190.796875
+      }
+    ],
+    "fontSizes": {
+      "heroEyebrow": 12,
+      "heroIdentity": 12,
+      "body": 18.72
+    },
+    "logoText": "WHAT YOU SAY NEXT?\nCHANGES EVERYTHING",
+    "title": "Matthew Johnson | What You Say Next",
+    "name": "brand-desktop",
+    "overflow": 0
+  },
+  {
+    "viewport": {
+      "width": 1920,
+      "height": 1080
+    },
+    "scrollWidth": 1920,
+    "documentHeight": 8622,
+    "brand": {
+      "x": 280,
+      "y": 20,
+      "width": 204.25,
+      "height": 48,
+      "top": 20,
+      "right": 484.25,
+      "bottom": 68,
+      "left": 280
+    },
+    "brandMark": {
+      "x": 280,
+      "y": 20,
+      "width": 48,
+      "height": 48,
+      "top": 20,
+      "right": 328,
+      "bottom": 68,
+      "left": 280
+    },
+    "menu": {
+      "x": 0,
+      "y": 0,
+      "width": 0,
+      "height": 0,
+      "top": 0,
+      "right": 0,
+      "bottom": 0,
+      "left": 0
+    },
+    "hero": {
+      "x": 0,
+      "y": 0,
+      "width": 1920,
+      "height": 911.390625,
+      "top": 0,
+      "right": 1920,
+      "bottom": 911.390625,
+      "left": 0
+    },
+    "shell": {
+      "x": 280,
+      "y": 144,
+      "width": 1360,
+      "height": 671.390625,
+      "top": 144,
+      "right": 1640,
+      "bottom": 815.390625,
+      "left": 280
+    },
+    "heroCopy": {
+      "x": 280,
+      "y": 144,
+      "width": 700,
+      "height": 671.390625,
+      "top": 144,
+      "right": 980,
+      "bottom": 815.390625,
+      "left": 280
+    },
+    "heroIdentityText": {
+      "x": 340,
+      "y": 801.7010498046875,
+      "width": 542.484375,
+      "height": 15,
+      "top": 801.7010498046875,
+      "right": 882.484375,
+      "bottom": 816.7010498046875,
+      "left": 340
+    },
+    "heroNameplate": {
+      "x": 1487.84375,
+      "y": 801.5872802734375,
+      "width": 376.15625,
+      "height": 74.3125,
+      "top": 801.5872802734375,
+      "right": 1864,
+      "bottom": 875.8997802734375,
+      "left": 1487.84375
+    },
+    "heroFootText": {
+      "x": 280,
+      "y": 871.390625,
+      "width": 315.453125,
+      "height": 14,
+      "top": 871.390625,
+      "right": 595.453125,
+      "bottom": 885.390625,
+      "left": 280
+    },
+    "heroNameplateDisplay": "grid",
+    "mobileEyebrowDisplay": "none",
+    "motionReady": true,
+    "heroTransform": "matrix(1.01551, 0, 0, 1.01551, 0, 0)",
+    "logoComplete": true,
+    "logoNatural": [
+      512,
+      512
+    ],
+    "bookVisual": {
+      "x": 342.546875,
+      "y": 3456.046875,
+      "width": 460,
+      "height": 575,
+      "top": 3456.046875,
+      "right": 802.546875,
+      "bottom": 4031.046875,
+      "left": 342.546875
+    },
+    "bookCover": {
+      "x": 398.4337463378906,
+      "y": 3479.16796875,
+      "width": 348.1950378417969,
+      "height": 504.3671875,
+      "top": 3479.16796875,
+      "right": 746.6287841796875,
+      "bottom": 3983.53515625,
+      "left": 398.4337463378906
+    },
+    "credentialImage": {
+      "x": 280,
+      "y": 5663.34375,
+      "width": 585.109375,
+      "height": 412.046875,
+      "top": 5663.34375,
+      "right": 865.109375,
+      "bottom": 6075.390625,
+      "left": 280
+    },
+    "credentialBadge": {
+      "x": 721.109375,
+      "y": 5952.84375,
+      "width": 122,
+      "height": 100.546875,
+      "top": 5952.84375,
+      "right": 843.109375,
+      "bottom": 6053.390625,
+      "left": 721.109375
+    },
+    "sectionOrder": [
+      "about",
+      "topics",
+      "method",
+      "book",
+      "events",
+      "resources",
+      "contact"
+    ],
+    "arcTrack": {
+      "x": 280,
+      "y": 2954.25,
+      "width": 1360,
+      "height": 235.796875,
+      "top": 2954.25,
+      "right": 1640,
+      "bottom": 3190.046875,
+      "left": 280
+    },
+    "arcStages": [
+      {
+        "lead": "Tension",
+        "left": 280,
+        "right": 690.65625,
+        "width": 410.65625,
+        "height": 190.796875
+      },
+      {
+        "lead": "Better language",
+        "left": 754.65625,
+        "right": 1165.328125,
+        "width": 410.671875,
+        "height": 190.796875
+      },
+      {
+        "lead": "Clear decision",
+        "left": 1229.328125,
+        "right": 1639.984375,
+        "width": 410.65625,
+        "height": 190.796875
+      }
+    ],
+    "fontSizes": {
+      "heroEyebrow": 12,
+      "heroIdentity": 12,
+      "body": 20
+    },
+    "logoText": "WHAT YOU SAY NEXT?\nCHANGES EVERYTHING",
+    "title": "Matthew Johnson | What You Say Next",
+    "name": "qa-desktop-1920",
+    "overflow": 0
+  }
+]
