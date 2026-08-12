@@ -209,6 +209,7 @@
     .proof-label { font-size: 11px; line-height: 1.55; letter-spacing: .12em; text-transform: uppercase; color: var(--muted); }
     .logos { display: grid; grid-template-columns: repeat(4, minmax(0,1fr)); gap: clamp(24px, 3vw, 46px); align-items: center; }
     .logos img { max-height: 42px; max-width: 132px; margin: auto; filter: grayscale(1); opacity: .67; }
+    .logos .icma-affiliation-logo { max-width: 170px; filter: none; opacity: 1; }
 
     section { padding: var(--section-y) 0; }
 
@@ -325,6 +326,20 @@
     .resource:hover { color: var(--teal); }
     .resource span { color: var(--teal); font-size: 11px; font-weight: 800; letter-spacing: .12em; text-transform: uppercase; }
     .resource strong { font-family: Montserrat, sans-serif; font-size: clamp(18px, 1.5vw, 22px); font-weight: 700; }
+    .featured-publication {
+      display: grid; grid-template-columns: minmax(180px, .72fr) minmax(0, 1.28fr); gap: clamp(22px, 3vw, 40px);
+      align-items: center; margin-bottom: clamp(28px, 3vw, 42px); padding: clamp(24px, 3vw, 38px);
+      background: var(--paper-2); border-top: 3px solid var(--teal); text-decoration: none;
+      transition: transform .3s cubic-bezier(.22,1,.36,1), box-shadow .3s ease;
+    }
+    .featured-publication-logo {
+      display: grid; place-items: center; min-height: 116px; padding: clamp(24px, 3vw, 34px);
+      background: var(--white);
+    }
+    .featured-publication-logo img { width: 100%; max-width: 300px; height: auto; }
+    .featured-publication-copy span { color: var(--teal); font-size: 11px; font-weight: 800; letter-spacing: .12em; text-transform: uppercase; }
+    .featured-publication-copy strong { display: block; margin-top: 10px; font-family: Montserrat, sans-serif; font-size: clamp(20px, 1.8vw, 28px); line-height: 1.24; }
+    .featured-publication-copy p { margin: 12px 0 0; color: #4c5860; font-size: 14px; }
     .newsletter {
       margin-top: clamp(32px, 4vw, 52px); padding: clamp(24px, 3vw, 38px);
       background: var(--paper-2); border-left: 4px solid var(--gold);
@@ -445,6 +460,7 @@
       .book-visual { order: 2; width: min(100%, 420px); }
       .book-copy { order: 1; }
       .book-copy p { max-width: 100%; }
+      .featured-publication { grid-template-columns: minmax(160px, .7fr) minmax(0, 1.3fr); }
       .book-visual::after { display: none; }
       .photo-strip { grid-template-columns: 1fr; min-height: auto; }
       .photo-strip img { aspect-ratio: 1.2; }
@@ -493,6 +509,8 @@
       .book-points { grid-template-columns: minmax(0, 1fr); gap: 14px; margin: 26px 0; }
       .book-visual { width: min(100%, 340px); }
       .resource { grid-template-columns: minmax(0, 1fr); gap: 8px; padding: 20px 0; }
+      .featured-publication { grid-template-columns: minmax(0, 1fr); }
+      .featured-publication-logo { min-height: 96px; padding: 24px; }
       .event { grid-template-columns: minmax(0, 1fr); gap: 8px; }
       .event-status { grid-column: 1; margin-top: 4px; }
       .signup { grid-template-columns: minmax(0, 1fr); }
@@ -562,7 +580,7 @@
       <div class="shell">
         <div class="proof-label">Professional affiliations<br />and public leadership service</div>
         <div class="logos">
-          <img src="assets/icma-blue.png" alt="International City/County Management Association" />
+          <img class="icma-affiliation-logo" src="assets/ICMA-logo-name-horizontal-color.png" alt="International City/County Management Association" />
           <img src="assets/apa.jpg" alt="American Planning Association" />
           <img src="assets/lonm.png" alt="League of New Mexico Municipalities" />
           <img src="assets/afi.png" alt="Alliance for Innovation" />
@@ -696,7 +714,10 @@
       <div class="shell split-a reveal">
         <div class="section-head"><p class="eyebrow">More from Matthew</p><h2>Ideas for the next hard conversation.</h2></div>
         <div class="resource-list">
-          <a class="resource" href="#contact"><span>Article</span><strong>The 10 Biggest Challenges Facing New Planners</strong></a>
+          <a class="featured-publication" href="https://icma.org/public-management-pm-magazine" target="_blank" rel="noreferrer" aria-label="Read The 10 Biggest Challenges Facing New Planners in ICMA's PM Magazine">
+            <span class="featured-publication-logo"><img src="assets/ICMA-logo-name-horizontal-color.png" alt="ICMA" /></span>
+            <span class="featured-publication-copy"><span>Published in PM Magazine</span><strong>The 10 Biggest Challenges Facing New Planners</strong><p>Matthew’s perspective on the practical leadership challenges that shape a planner’s early career.</p></span>
+          </a>
           <a class="resource" href="https://thecitymanagerexperience.podbean.com/" target="_blank" rel="noreferrer"><span>Podcast</span><strong>The City Manager Experience</strong></a>
           <a class="resource" href="https://podcasts.apple.com/us/podcast/the-city-manager-unfiltered/id1690196553" target="_blank" rel="noreferrer"><span>Podcast</span><strong>The City Manager Unfiltered</strong></a>
           <div class="newsletter">
