@@ -1,6 +1,7 @@
 # Matthew Johnson / NexPhrase
 
 **Status:** Active build. Matthew confirmed in Slack on 2026-08-10 that he updated the Google Drive and authorized Antonio to use the useful material; the review/build handoff is now on Antonio's side.
+**GitHub source of truth:** Private repository `antoxicion/matthew-johnson-nexphrase` — https://github.com/antoxicion/matthew-johnson-nexphrase
 **Last Touch:** 2026-08-10 at 2:39 PM ET in `#matthew-speaker-site`: Antonio acknowledged the Drive update, explained that he is currently out sick with COVID, and said he would review the material over the course of the week before following up.
 
 ## Contact
