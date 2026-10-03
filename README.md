@@ -1,8 +1,10 @@
 # Matthew Johnson / NexPhrase
 
-**Status:** Active build. Matthew confirmed in Slack on 2026-08-10 that he updated the Google Drive and authorized Antonio to use the useful material; the review/build handoff is now on Antonio's side.
-**GitHub source of truth:** Private repository `antoxicion/matthew-johnson-nexphrase` — https://github.com/antoxicion/matthew-johnson-nexphrase
-**Last Touch:** 2026-08-10 at 2:39 PM ET in `#matthew-speaker-site`: Antonio acknowledged the Drive update, explained that he is currently out sick with COVID, and said he would review the material over the course of the week before following up.
+**Status (September 29, 2026):** Matthew's September 18 copy and Speaker’s Toolkit are implemented and deployed to the existing preview: https://wysn-matthew-preview.vercel.app. WhatYouSayNext.com still serves the prior GoDaddy site; DNS access is pending.
+**GitHub source of truth:** https://github.com/antoniourbinajr/matthew-johnson-nexphrase
+**Latest client material:** September 18 “Updates” and “Speaker’s Toolkit” emails plus shared Drive files. Matthew acknowledged receipt on September 21; no later substantive update was found in the September 29 check.
+**Last touch:** September 29: Antonio emailed Matthew requesting a fresh delegate invitation covering DNS for WhatYouSayNext.com and a replacement public Calendly URL. Gmail confirmed SENT.
+**Current delivery record:** See `PROJECT-TRACKER.md`. Historical notes below are retained for context and are superseded by this dated status.
 
 ## Contact
 - Name: Matthew Johnson

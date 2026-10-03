@@ -4,6 +4,13 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="description" content="Matthew Johnson helps leaders build better conversations, navigate conflict, and lead without losing trust, talent, or purpose." />
+  <meta property="og:title" content="Matthew Johnson | What You Say Next" />
+  <meta property="og:description" content="Matthew Johnson helps leaders build better conversations, navigate conflict, and lead without losing trust, talent, or purpose." />
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="What You Say Next" />
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Matthew Johnson | What You Say Next" />
+  <meta name="twitter:description" content="Matthew Johnson helps leaders build better conversations, navigate conflict, and lead without losing trust, talent, or purpose." />
   <meta name="theme-color" content="#1f1f1f" />
   <title>Matthew Johnson | What You Say Next</title>
   <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32.png" />
@@ -29,6 +36,7 @@
       --on-gold: #171310;            /* 4.85:1 on --gold */
       --teal: #b53d0e;
       --muted: #68635f;
+      --on-dark: #e8e3dc;            /* body copy on dark sections, warm off-white */
       --line: rgba(31, 31, 31, .16);
 
       /* ---- width system ---- */
@@ -108,8 +116,8 @@
     .brand {
       display: inline-flex; align-items: center; gap: 12px;
       text-decoration: none; color: #f4f1ed;
-      --mark-size: 48px;
-      --brand-type: 20px;
+      --mark-size: 64px;
+      --brand-type: 26px;
     }
     .brand-mark { flex: 0 0 auto; width: var(--mark-size); height: var(--mark-size); }
     .brand-mark img { display: block; width: 100%; height: 100%; object-fit: contain; }
@@ -121,7 +129,7 @@
     }
     .brand-name em { color: var(--gold); font-style: normal; }
     .brand-tagline {
-      color: #f0f0ee; font-size: 7px; line-height: 1; font-weight: 800;
+      color: #f0f0ee; font-size: 9px; line-height: 1; font-weight: 800;
       letter-spacing: .22em; text-transform: uppercase; white-space: nowrap;
     }
     .brand:hover .brand-name em { color: #ff7a42; }
@@ -150,9 +158,12 @@
       display: flex; align-items: flex-end; color: var(--white); background: var(--ink);
       isolation: isolate;
     }
+    /* Portrait headshot: anchored to the right edge at full hero height and faded into the dark left half. */
     .hero-media {
-      position: absolute; z-index: 0; inset: 0; width: 100%; height: 100%;
-      object-fit: cover; object-position: 62% 42%; filter: saturate(.96) contrast(1.03);
+      position: absolute; z-index: 0; top: 0; bottom: 0; right: 0; left: auto; width: auto; height: 100%;
+      object-fit: cover; object-position: center top; filter: saturate(.96) contrast(1.03);
+      -webkit-mask-image: linear-gradient(90deg, transparent 0, #000 28%);
+      mask-image: linear-gradient(90deg, transparent 0, #000 28%);
       --hero-shift: 0px;
       transform: translate3d(0, var(--hero-shift), 0) scale(1.015);
       will-change: transform;
@@ -207,7 +218,7 @@
     .proof { padding: 36px 0; background: var(--white); border-bottom: 1px solid var(--line); }
     .proof .shell { display: grid; grid-template-columns: var(--split-a); align-items: center; gap: var(--gap-col); }
     .proof-label { font-size: 11px; line-height: 1.55; letter-spacing: .12em; text-transform: uppercase; color: var(--muted); }
-    .logos { display: grid; grid-template-columns: repeat(4, minmax(0,1fr)); gap: clamp(24px, 3vw, 46px); align-items: center; }
+    .logos { display: grid; grid-template-columns: repeat(3, minmax(0,1fr)); gap: clamp(20px, 2.6vw, 40px); align-items: center; }
     .logos img { max-height: 42px; max-width: 132px; margin: auto; filter: grayscale(1); opacity: .67; }
     .logos .icma-affiliation-logo { max-width: 170px; filter: none; opacity: 1; }
 
@@ -221,11 +232,22 @@
 
     .intro-copy { padding-top: clamp(0px, 3.4vw, 56px); max-width: var(--measure); }
     .intro-copy > p { margin: 0 0 22px; font-size: clamp(17px, 1.15vw, 18px); color: #37444d; }
-    .pull-line { margin-top: clamp(30px, 3.2vw, 44px); padding-left: 28px; border-left: 3px solid var(--gold); font-family: "Bebas Neue", "Arial Narrow", Impact, sans-serif; font-size: clamp(26px, 2.3vw, 32px); letter-spacing: .02em; line-height: 1.15; }
+    .pull-quote {
+      position: relative; margin: clamp(30px, 3.2vw, 44px) 0 0; padding: 22px 28px 22px 34px;
+      background: var(--white); border-left: 4px solid var(--gold); box-shadow: 0 14px 34px rgba(31,31,31,.07);
+    }
+    .pull-quote::before {
+      content: "\201C"; position: absolute; top: -14px; left: 18px; color: var(--gold);
+      font-family: "Bebas Neue", "Arial Narrow", Impact, sans-serif; font-size: 84px; line-height: 1;
+    }
+    .pull-quote p {
+      margin: 0; font-family: "Bebas Neue", "Arial Narrow", Impact, sans-serif;
+      font-size: clamp(26px, 2.3vw, 32px); letter-spacing: .02em; line-height: 1.15;
+    }
 
     .topics { background: var(--ink); color: var(--white); }
     .topics-head { margin-bottom: var(--gap-head); align-items: end; }
-    .topics-head > p { max-width: var(--measure-sm); color: #b8c4c8; margin: 0; align-self: end; }
+    .topics-head > p { max-width: var(--measure-sm); color: var(--on-dark); font-size: clamp(16px, 1.2vw, 18px); margin: 0; align-self: end; }
     .topic-list { border-top: 1px solid rgba(255,255,255,.18); }
     .topic {
       display: grid; grid-template-columns: 92px minmax(0, 1fr) minmax(0, .72fr); gap: clamp(20px, 2.6vw, 40px); align-items: center;
@@ -233,7 +255,7 @@
     }
     .topic-num { color: var(--gold); font-family: "Bebas Neue", "Arial Narrow", Impact, sans-serif; font-size: 21px; }
     .topic h3 { margin: 0; font-family: "Bebas Neue", "Arial Narrow", Impact, sans-serif; font-size: clamp(31px, 3.1vw, 48px); font-weight: 400; letter-spacing: .01em; }
-    .topic p { margin: 0; max-width: 44ch; color: #b3c0c4; font-size: 14px; }
+    .topic p { margin: 0; max-width: 44ch; color: var(--on-dark); font-size: 15.5px; }
 
     /* ---------- The method sequence: one rule, three beats ---------- */
     .arc { background: var(--white); }
@@ -266,6 +288,7 @@
     }
     .arc-stage:last-child h3 { color: var(--gold-deep); }
     .arc-stage p { margin: 14px 0 0; max-width: 34ch; color: #4c5860; font-size: 15px; line-height: 1.65; }
+    .arc-lead { display: block; margin-bottom: 6px; color: var(--gold-deep); font-size: 17px; font-weight: 800; letter-spacing: .01em; }
 
     .book { overflow: hidden; background: var(--paper-2); }
     /* Aspect-driven art board: the cover and the disc are sized off the board,
@@ -282,10 +305,20 @@
     .book-points { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 18px; margin: clamp(28px, 2.8vw, 40px) 0; max-width: 780px; }
     .book-point { border-top: 2px solid var(--ink); padding-top: 15px; font-size: 13px; line-height: 1.45; font-weight: 700; }
 
-    .experience { padding-bottom: 0; background: var(--white); }
-    .experience-head { margin-bottom: var(--gap-head); }
-    .experience-head > p { max-width: var(--measure-sm); color: #4c5860; font-size: clamp(16px, 1.15vw, 17px); align-self: end; margin: 0; }
-    .photo-strip { display: grid; grid-template-columns: 1.3fr .7fr; min-height: clamp(420px, 40vw, 600px); background: var(--ink); }
+    .experience { padding: 0; background: var(--white); }
+    .photo-strip { position: relative; display: grid; grid-template-columns: 1.3fr .7fr; min-height: clamp(460px, 42vw, 640px); background: var(--ink); }
+    /* The section head rides on the photo, so the strip carries its own copy and the page loses a full white band. */
+    .experience-card {
+      position: absolute; z-index: 2; bottom: clamp(28px, 4vw, 56px);
+      left: max(var(--gutter), calc((100% - var(--max)) / 2));
+      max-width: min(560px, calc(100% - (var(--gutter) * 2)));
+      padding: clamp(24px, 3vw, 40px); color: var(--white);
+      background: rgba(18, 18, 18, .72); border-left: 4px solid var(--gold);
+      -webkit-backdrop-filter: blur(10px); backdrop-filter: blur(10px);
+    }
+    .experience-card .eyebrow { color: var(--gold); margin-bottom: 14px; }
+    .experience-card h2 { font-size: clamp(36px, 3.6vw, 58px); }
+    .experience-card > p:not(.eyebrow) { margin: 16px 0 0; max-width: var(--measure-sm); color: var(--on-dark); font-size: clamp(15px, 1.1vw, 17px); }
     .photo-strip img { width: 100%; height: 100%; object-fit: cover; }
     .photo-main { object-position: 58% center; }
     .photo-side { object-position: center 28%; filter: saturate(.82); }
@@ -300,10 +333,13 @@
       background: #111; border-radius: 50%; box-shadow: 0 14px 30px rgba(0,0,0,.4);
     }
     .credential-copy { max-width: var(--measure); }
-    .credential-copy p { color: #cfcac6; font-size: clamp(16px, 1.15vw, 17px); }
+    .credential-copy p { color: var(--on-dark); font-size: clamp(17px, 1.25vw, 18.5px); }
+    .ewts { color: var(--gold); font-weight: 800; text-decoration: none; }
+    .ewts:hover { color: #ff7a42; text-decoration: underline; text-underline-offset: 3px; }
+    .ewts sup { font-size: .55em; line-height: 0; vertical-align: super; }
 
     .events { background: var(--paper); }
-    .events-head { margin-bottom: var(--gap-head); align-items: end; }
+    .events-head { margin-bottom: var(--gap-head); align-items: center; }
     .events-head > p { margin: 0; max-width: var(--measure-sm); color: #4c5860; }
     .event-list { border-top: 1px solid var(--line); }
     .event {
@@ -317,7 +353,19 @@
     .event-status.upcoming { padding: 9px 12px; background: var(--gold); color: var(--on-gold); }
 
     .resources { background: var(--white); }
+    .resources-head { margin-bottom: var(--gap-head); }
+    /* Podcasts on the left rail, articles on the right, the newsletter under both. */
+    .media-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: var(--gap-col); align-items: start; }
+    .media-title {
+      margin: 0 0 14px; font-family: "Bebas Neue", "Arial Narrow", Impact, sans-serif; font-weight: 400;
+      font-size: clamp(24px, 2vw, 30px); letter-spacing: .03em; color: var(--ink);
+    }
     .resource-list { border-top: 1px solid var(--line); }
+    .coming-soon { color: var(--muted); }
+    .coming-soon strong {
+      display: inline-block; padding: 7px 11px; background: var(--paper-2); color: var(--muted);
+      font-size: 11px; font-weight: 800; letter-spacing: .12em; text-transform: uppercase;
+    }
     .resource {
       display: grid; grid-template-columns: 130px minmax(0, 1fr); gap: 28px; align-items: baseline;
       padding: clamp(22px, 2vw, 28px) 0; border-bottom: 1px solid var(--line);
@@ -326,12 +374,14 @@
     .resource:hover { color: var(--teal); }
     .resource span { color: var(--teal); font-size: 11px; font-weight: 800; letter-spacing: .12em; text-transform: uppercase; }
     .resource strong { font-family: Montserrat, sans-serif; font-size: clamp(18px, 1.5vw, 22px); font-weight: 700; }
+    .resource small { display: block; margin-top: 5px; color: var(--muted); font-size: 13px; font-weight: 600; line-height: 1.4; }
     .featured-publication {
       display: grid; grid-template-columns: minmax(180px, .72fr) minmax(0, 1.28fr); gap: clamp(22px, 3vw, 40px);
-      align-items: center; margin-bottom: clamp(28px, 3vw, 42px); padding: clamp(24px, 3vw, 38px);
+      align-items: center; padding: clamp(24px, 3vw, 38px);
       background: var(--paper-2); border-top: 3px solid var(--teal); text-decoration: none;
       transition: transform .3s cubic-bezier(.22,1,.36,1), box-shadow .3s ease;
     }
+    .featured-publication + .featured-publication { margin-top: 16px; }
     .featured-publication-logo {
       display: grid; place-items: center; min-height: 116px; padding: clamp(24px, 3vw, 34px);
       background: var(--white);
@@ -363,6 +413,22 @@
     footer .shell { display: flex; justify-content: space-between; align-items: center; gap: 28px; }
     footer .brand { --mark-size: 42px; --brand-type: 18px; }
     footer p { margin: 0; font-size: 12px; }
+    .toolkit { background: var(--white); }
+    .toolkit-head { align-items: center; margin-bottom: var(--gap-head); }
+    .toolkit-head > p { color: var(--muted); max-width: var(--measure); }
+    .toolkit-docs { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: var(--gap-col); margin-bottom: 36px; }
+    .toolkit-docs .resource { grid-template-columns: 68px minmax(0, 1fr); border-top: 1px solid var(--line); }
+    .toolkit-photos { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 24px; }
+    .toolkit-photo { display: block; color: var(--ink); text-decoration: none; }
+    .toolkit-photo img { width: 100%; height: auto; aspect-ratio: 4 / 5; object-fit: contain; background: var(--paper); }
+    .toolkit-photo strong { display: block; margin-top: 12px; font-size: 14px; }
+    .toolkit-photo span { color: var(--muted); font-size: 12px; }
+    .toolkit-photo:hover strong { text-decoration: underline; text-underline-offset: 3px; }
+    .cta .contact-email { margin-top: 24px; font-size: 15px; }
+    .contact-email a { color: inherit; text-underline-offset: 3px; }
+    #book-updates { scroll-margin-top: calc(var(--header-h) + 24px); }
+    @media (max-width: 900px) { .toolkit-photos { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+    @media (max-width: 680px) { .toolkit-docs { grid-template-columns: minmax(0, 1fr); gap: 0; } .toolkit-photos { gap: 24px 16px; } }
 
     /* ---------- Premium motion: restrained, spatial, and reversible ---------- */
     .js-anim .reveal { opacity: 0; filter: blur(3px); transform: translateY(26px); transition: opacity .85s cubic-bezier(.22,1,.36,1), filter .85s ease, transform .85s cubic-bezier(.22,1,.36,1); }
@@ -421,7 +487,7 @@
 
     @media (max-width: 900px) {
       :root { --header-h: 72px; --section-y: clamp(64px, 8vw, 92px); }
-      .brand { --mark-size: 40px; --brand-type: 17px; }
+      .brand { --mark-size: 52px; --brand-type: 22px; }
       .menu { display: inline-flex; }
       nav {
         display: none; position: absolute; left: var(--gutter); right: var(--gutter); top: calc(var(--header-h) - 6px);
@@ -432,8 +498,8 @@
       nav a:not(.nav-cta) { padding: 15px 8px; border-bottom: 1px solid rgba(255,255,255,.12); font-size: 15px; }
       nav .nav-cta { margin-top: 14px; padding: 16px; text-align: center; }
       .hero { min-height: clamp(600px, 86svh, 760px); padding: calc(var(--header-h) + 40px) 0 clamp(48px, 7vw, 72px); }
-      .hero-copy { max-width: 60%; }
-      .hero-media { object-position: 61% center; }
+      .hero-copy { max-width: 56%; }
+      .hero-media { width: 56%; object-position: 40% top; }
       .hero::before { background: linear-gradient(90deg, rgba(18,18,18,.96) 0%, rgba(18,18,18,.76) 60%, rgba(18,18,18,.28) 100%), linear-gradient(0deg, rgba(18,18,18,.86), transparent 58%); }
       .hero-nameplate { right: var(--gutter); bottom: 28px; }
       .hero-foot { display: none; }
@@ -441,7 +507,7 @@
       .proof-label { text-align: center; }
       .intro-copy { padding-top: 0; max-width: 100%; }
       .credential-copy { max-width: 100%; }
-      .topics-head > p, .experience-head > p { max-width: 100%; }
+      .topics-head > p { max-width: 100%; }
       .topic { grid-template-columns: 46px minmax(0, 1fr); gap: 4px 18px; }
       .topic p { grid-column: 2; max-width: 100%; margin-top: 10px; }
       /* Phone/tablet: the rule stands up and becomes a spine down the left edge. */
@@ -461,10 +527,12 @@
       .book-copy { order: 1; }
       .book-copy p { max-width: 100%; }
       .featured-publication { grid-template-columns: minmax(160px, .7fr) minmax(0, 1.3fr); }
+      .media-grid { grid-template-columns: minmax(0, 1fr); }
       .book-visual::after { display: none; }
       .photo-strip { grid-template-columns: 1fr; min-height: auto; }
       .photo-strip img { aspect-ratio: 1.2; }
       .photo-side { display: none; }
+      .experience-card { left: var(--gutter); right: var(--gutter); max-width: none; }
       .event { grid-template-columns: 132px minmax(0, 1fr); }
       .event-status { grid-column: 2; justify-self: start; }
     }
@@ -475,12 +543,12 @@
       h1 { font-size: clamp(38px, 10.4vw, 48px); }
       h2 { font-size: clamp(33px, 9.2vw, 42px); }
       header .shell { gap: 12px; }
-      .brand { --mark-size: 36px; --brand-type: 15px; gap: 8px; }
+      .brand { --mark-size: 44px; --brand-type: 18px; gap: 8px; }
       .brand-tagline { display: none; }
       .menu { min-width: 48px; padding: 0 10px; font-size: 11px; letter-spacing: .08em; }
       .hero { min-height: clamp(540px, 84svh, 700px); padding: calc(var(--header-h) + 30px) 0 44px; align-items: flex-end; }
       .hero-copy { max-width: 100%; }
-      .hero-media { object-position: 78% center; }
+      .hero-media { left: 0; width: 100%; object-position: center 12%; -webkit-mask-image: none; mask-image: none; }
       .hero::before { background: linear-gradient(0deg, rgba(18,18,18,.98) 0%, rgba(18,18,18,.9) 52%, rgba(18,18,18,.34) 100%), linear-gradient(90deg, rgba(18,18,18,.8), transparent); }
       .hero::after { display: none; }
       .hero-copy { max-width: 100%; }
@@ -498,8 +566,11 @@
       .proof { padding: 26px 0; }
       .logos { grid-template-columns: repeat(2, minmax(0, 1fr)); row-gap: 24px; column-gap: 18px; }
       .logos img { max-height: 38px; }
+      .logos img:last-child { grid-column: auto; }
       .eyebrow { font-size: 11px; letter-spacing: .12em; }
-      .pull-line { margin-top: 26px; padding-left: 18px; font-size: 25px; }
+      .pull-quote { margin-top: 26px; padding: 18px 18px 18px 22px; }
+      .pull-quote::before { top: -10px; left: 12px; font-size: 64px; }
+      .pull-quote p { font-size: 25px; }
       .topic { grid-template-columns: 38px minmax(0, 1fr); padding: 24px 0; }
       .topic h3 { font-size: 30px; }
       .arc-track { --arc-indent: 22px; gap: 28px; }
@@ -508,6 +579,9 @@
       .arc-stage p { margin-top: 12px; font-size: 14px; }
       .book-points { grid-template-columns: minmax(0, 1fr); gap: 14px; margin: 26px 0; }
       .book-visual { width: min(100%, 340px); }
+      /* Phone: the card sits under the photo as a solid panel so the copy never covers the whole image. */
+      .experience-card { position: static; padding: 28px var(--gutter) 34px; background: var(--ink); border-left: 0; backdrop-filter: none; -webkit-backdrop-filter: none; }
+      .experience-card h2 { font-size: clamp(33px, 9.2vw, 42px); }
       .resource { grid-template-columns: minmax(0, 1fr); gap: 8px; padding: 20px 0; }
       .featured-publication { grid-template-columns: minmax(0, 1fr); }
       .featured-publication-logo { min-height: 96px; padding: 24px; }
@@ -519,7 +593,7 @@
     }
 
     @media (max-width: 380px) {
-      .brand { --mark-size: 33px; --brand-type: 14px; gap: 7px; }
+      .brand { --mark-size: 40px; --brand-type: 16px; gap: 7px; }
       .menu { min-width: 46px; padding: 0 8px; }
     }
 
@@ -552,6 +626,7 @@
         <a href="#book">The Book</a>
         <a href="#about">About Matthew</a>
         <a href="#resources">Insights</a>
+        <a href="#toolkit">Toolkit</a>
         <a class="nav-cta" href="#contact">Invite Matthew</a>
       </nav>
     </div>
@@ -559,10 +634,9 @@
 
   <main id="top">
     <section class="hero">
-      <img class="hero-media" src="assets/matthew-speaking-hero.png" alt="Matthew Johnson delivering a keynote to a live audience" />
+      <img class="hero-media" src="assets/matthew-blue-suit-headshot.jpg" alt="Matthew Johnson, speaker, author, and public-sector executive" />
       <div class="shell hero-grid">
         <div class="hero-copy">
-          <p class="eyebrow"><span class="eyebrow-desktop">Speaker, author &amp; public-sector executive</span><span class="eyebrow-mobile">Matthew Johnson · speaker, author &amp; executive</span></p>
           <h1 class="hero-thesis">Better conversations. Stronger leaders.</h1>
           <p class="hero-lede">Matthew Johnson turns hard-earned public leadership experience into practical tools for navigating conflict, restoring trust, and moving complicated rooms toward a decision.</p>
           <div class="hero-actions">
@@ -584,6 +658,8 @@
           <img src="assets/apa.jpg" alt="American Planning Association" />
           <img src="assets/lonm.png" alt="League of New Mexico Municipalities" />
           <img src="assets/afi.png" alt="Alliance for Innovation" />
+          <img src="assets/mount-rogers-regional-partnership.png" alt="Mount Rogers Regional Partnership" />
+          <img src="assets/reframe-logo.svg" alt="REFRAME" />
         </div>
       </div>
     </aside>
@@ -595,9 +671,9 @@
           <h2>Disagreement is not the problem. Silence is.</h2>
         </div>
         <div class="intro-copy">
-          <p>Matthew has spent more than fifteen years leading through public meetings, competing priorities, institutional risk, and the moments when a room needs clarity more than another polished answer.</p>
+          <p>Matthew has spent more than twenty-five years leading through public meetings, competing priorities, institutional risk, and the moments when a room needs clarity more than another polished answer.</p>
           <p>His work is grounded in a simple idea: a plan is a living agreement. Leaders have to surface unresolved friction, turn intention into measurable commitments, and keep the feedback loop open when circumstances change.</p>
-          <div class="pull-line">A strong conversation leaves the room with a clearer decision, shared language, and a practical way forward.</div>
+          <blockquote class="pull-quote"><p>The goal of a hard conversation isn't always agreement. It's alignment on what happens next.</p></blockquote>
         </div>
       </div>
     </section>
@@ -623,7 +699,7 @@
             <p class="eyebrow">Matthew’s method for hard conversations</p>
             <h2 id="method-title">Every difficult room<br />moves the same way.</h2>
           </div>
-          <p>The keynotes above and the book below run on one sequence. Name what the room is avoiding, hand people language that holds, and leave with a decision everyone can repeat.</p>
+          <p>One method drives both the keynotes above and the book below. Name what's being avoided. Provide language that holds under pressure. Leave with a decision the whole room can repeat.</p>
         </div>
         <ol class="arc-track reveal" role="list">
           <li class="arc-stage">
@@ -639,7 +715,7 @@
           <li class="arc-stage">
             <span class="arc-index" aria-hidden="true">03</span>
             <h3>Clear decision</h3>
-            <p>Close the loop out loud. The room leaves with a decision, shared language, and a practical way forward instead of a polite silence.</p>
+            <p><strong class="arc-lead">Name the decision before the room disperses.</strong> What people take with them is a decision, shared language, and a way forward, not a polite silence that quietly reopens later.</p>
           </li>
         </ol>
       </div>
@@ -654,32 +730,33 @@
           <p><strong>How to Lead Through Conflict Without Losing Trust, Talent, or Purpose.</strong></p>
           <p>The book moves beyond winning arguments. It is a practical guide to staying anchored to the truth, committed to the relationship, and loyal to the mission at the same time.</p>
           <div class="book-points"><div class="book-point">Interrupt harmful behavior without creating a spectacle</div><div class="book-point">Restore structure when a conversation begins to drift</div><div class="book-point">Protect dignity while keeping the work moving</div></div>
-          <a class="button" href="#contact">Bring the message to your organization</a>
+          <a class="button" href="#book-updates">Let me know when the book is available</a>
         </div>
       </div>
     </section>
 
     <section class="experience">
-      <div class="shell split-a experience-head reveal">
-        <div class="section-head"><p class="eyebrow">Credibility you can feel</p><h2>Not theory from the sidelines.</h2></div>
-        <p>Matthew’s perspective comes from the work itself: public leadership, planning, executive responsibility, and the complicated human moments that never fit neatly on an agenda.</p>
-      </div>
       <div class="photo-strip">
         <img class="photo-main" src="assets/matthew-workshop.png" alt="Matthew Johnson leading an interactive leadership workshop" />
         <img class="photo-side" src="assets/matthew-portrait.png" alt="Matthew Johnson" />
+        <div class="experience-card reveal">
+          <p class="eyebrow">Credibility you can feel</p>
+          <h2>Not theory from the sidelines.</h2>
+          <p>Matthew’s perspective comes from the work itself: public leadership, planning, executive responsibility, and the complicated human moments that never fit neatly on an agenda.</p>
+        </div>
       </div>
     </section>
 
     <section class="credential">
       <div class="shell split-b reveal">
         <div class="credential-image">
-          <img src="assets/phil-jones-certification.jpg" alt="Matthew Johnson receiving his Exactly What to Say certification from Phil M. Jones" />
-          <img class="credential-badge" src="assets/exactly-what-to-say-badge-official.png" alt="Exactly What to Say Certified Guide" />
+          <img src="assets/phil-jones-certification.jpg" alt="Matthew Johnson receiving his Exactly What to Say® certification from Phil M Jones" />
+          <img class="credential-badge" src="assets/exactly-what-to-say-badge-official.png" alt="Exactly What to Say® Certified Guide" />
         </div>
         <div class="credential-copy">
-          <p class="eyebrow">Exactly What to Say certified guide</p>
+          <p class="eyebrow"><a class="ewts" href="https://exactlywhattosay.com" target="_blank" rel="noopener">Exactly What to Say<sup>®</sup></a> certified guide</p>
           <h2>Language that helps people move.</h2>
-          <p>As an Exactly What to Say Certified Guide, Matthew brings proven language frameworks into difficult, high-stakes conversations. The goal is not a clever script. It is helping leaders find the next words that protect trust and keep the work moving.</p>
+          <p>As an <a class="ewts" href="https://exactlywhattosay.com" target="_blank" rel="noopener">Exactly What to Say<sup>®</sup></a> Certified Guide, Matthew brings proven language frameworks into difficult, high-stakes conversations. The goal is not a clever script. It is helping leaders find the next words that protect trust and keep the work moving.</p>
         </div>
       </div>
     </section>
@@ -706,30 +783,73 @@
             <div><h3>ICMA Annual Conference</h3><p>International City/County Management Association · Long Beach, California</p></div>
             <div class="event-status upcoming">Upcoming</div>
           </article>
+          <article class="event">
+            <div class="event-date">October 2026</div>
+            <div><h3>Mount Rogers Regional Partnership</h3><p>Investors dinner keynote · Wytheville, Virginia</p></div>
+            <div class="event-status upcoming">Upcoming</div>
+          </article>
+          <article class="event">
+            <div class="event-date">November 2026</div>
+            <div><h3>REFRAME</h3><p>Coral Gables, Florida</p></div>
+            <div class="event-status upcoming">Upcoming</div>
+          </article>
         </div>
       </div>
     </section>
 
     <section class="resources" id="resources">
-      <div class="shell split-a reveal">
-        <div class="section-head"><p class="eyebrow">More from Matthew</p><h2>Ideas for the next hard conversation.</h2></div>
-        <div class="resource-list">
-          <a class="featured-publication" href="https://icma.org/public-management-pm-magazine" target="_blank" rel="noreferrer" aria-label="Read The 10 Biggest Challenges Facing New Planners in ICMA's PM Magazine">
-            <span class="featured-publication-logo"><img src="assets/ICMA-logo-name-horizontal-color.png" alt="ICMA" /></span>
-            <span class="featured-publication-copy"><span>Published in PM Magazine</span><strong>The 10 Biggest Challenges Facing New Planners</strong><p>Matthew’s perspective on the practical leadership challenges that shape a planner’s early career.</p></span>
-          </a>
-          <a class="resource" href="https://thecitymanagerexperience.podbean.com/" target="_blank" rel="noreferrer"><span>Podcast</span><strong>The City Manager Experience</strong></a>
-          <a class="resource" href="https://podcasts.apple.com/us/podcast/the-city-manager-unfiltered/id1690196553" target="_blank" rel="noreferrer"><span>Podcast</span><strong>The City Manager Unfiltered</strong></a>
-          <div class="newsletter">
-            <h3>Get the next phrase.</h3>
-            <p>Practical language for leading hard conversations without losing trust, talent, or purpose.</p>
-            <form class="signup" action="https://whatyousaynext.us2.list-manage.com/subscribe/post?u=efc442e58177c2dd3bee1348c&amp;id=f8beabd1aa&amp;f_id=009a90e3f0" method="post" target="_blank">
-              <label for="newsletter-email">Email address</label>
-              <input id="newsletter-email" type="email" name="EMAIL" autocomplete="email" placeholder="Email address" required />
-              <div aria-hidden="true" style="position:absolute;left:-5000px"><input type="text" name="b_efc442e58177c2dd3bee1348c_f8beabd1aa" tabindex="-1" value="" /></div>
-              <button class="button" type="submit" name="subscribe">Join the list</button>
-            </form>
+      <div class="shell">
+        <div class="section-head resources-head reveal"><p class="eyebrow">More from Matthew</p><h2>Ideas for the next hard conversation.</h2></div>
+        <div class="media-grid reveal">
+          <div role="group" aria-labelledby="podcasts-title">
+            <h3 class="media-title" id="podcasts-title">Podcasts</h3>
+            <div class="resource-list">
+              <a class="resource" href="https://podcasts.apple.com/us/podcast/something-to-contribute/id1329558957?i=1000759972959" target="_blank" rel="noreferrer"><span>Podcast</span><strong>Something To Contribute<small>Your Stories Don’t Define You, How You Tell Them Will · April 2026</small></strong></a>
+              <a class="resource" href="https://podcasts.apple.com/us/podcast/trust-is-the-true-infrastructure-of-local/id1732367039?i=1000747858916" target="_blank" rel="noreferrer"><span>Podcast</span><strong>Trust is the True Infrastructure of Local Government<small>Community Catalysts · February 2026</small></strong></a>
+              <div class="resource coming-soon"><span>Coming soon</span><strong>HaltingWinter podcast</strong></div>
+              <div class="resource coming-soon"><span>Coming soon</span><strong>Lead Well podcast</strong></div>
+            </div>
           </div>
+          <div role="group" aria-labelledby="articles-title">
+            <h3 class="media-title" id="articles-title">Articles</h3>
+            <a class="featured-publication" href="articles/effective-disagreement-pm-magazine.pdf" aria-label="Read Effective Disagreement: The hidden discipline that protects leaders under pressure, published in PM Magazine">
+              <span class="featured-publication-logo"><img src="assets/ICMA-logo-name-horizontal-color.png" alt="ICMA" /></span>
+              <span class="featured-publication-copy"><span>Published in PM Magazine</span><strong>Effective Disagreement</strong><p>The hidden discipline that protects leaders under pressure.</p></span>
+            </a>
+            <a class="featured-publication" href="articles/effective-disagreement-star-news-fall-2026.pdf" aria-label="Read Effective Disagreement in Small Town and Rural Planning, Fall 2026">
+              <span class="featured-publication-logo"><img src="assets/apa.jpg" alt="American Planning Association" /></span>
+              <span class="featured-publication-copy"><span>Small Town &amp; Rural Planning · Fall 2026</span><strong>Effective Disagreement</strong><p>The zoning hearing is going fine until someone in the third row asks about traffic. Ninety seconds later, nobody's talking about land use anymore. The board is defensive, the applicant is pale, and the chair is banging a gavel for order that isn't coming back.</p></span>
+            </a>
+          </div>
+        </div>
+        <div class="newsletter reveal" id="book-updates">
+          <h3>Be first to hear about the book.</h3>
+          <p>Get updates on <em>Effective Disagreement</em> and practical language for your next hard conversation. Unsubscribe at any time.</p>
+          <form class="signup" action="https://whatyousaynext.us2.list-manage.com/subscribe/post?u=efc442e58177c2dd3bee1348c&amp;id=f8beabd1aa&amp;f_id=009a90e3f0" method="post" target="_blank">
+            <label for="newsletter-email">Email address</label>
+            <input id="newsletter-email" type="email" name="EMAIL" autocomplete="email" placeholder="Email address" required />
+            <div aria-hidden="true" style="position:absolute;left:-5000px"><input type="text" name="b_efc442e58177c2dd3bee1348c_f8beabd1aa" tabindex="-1" value="" /></div>
+            <button class="button" type="submit" name="subscribe">Keep me updated</button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <section class="toolkit" id="toolkit" aria-labelledby="toolkit-title">
+      <div class="shell">
+        <div class="split-a toolkit-head reveal">
+          <div class="section-head"><p class="eyebrow">For event organizers</p><h2 id="toolkit-title">Speaker’s Toolkit</h2></div>
+          <p>Matthew’s official biographies, stage introduction, and headshots for your event program and promotion.</p>
+        </div>
+        <div class="toolkit-docs reveal">
+          <a class="resource" href="toolkit/official-bio.docx" download><span>Word</span><strong>Official biographies<small>Short, medium, and full-length versions · 881 KB</small></strong></a>
+          <a class="resource" href="toolkit/speaker-introduction.docx" download><span>Word</span><strong>Speaker introduction<small>Ready for your host or emcee · 880 KB</small></strong></a>
+        </div>
+        <div class="toolkit-photos reveal">
+          <a class="toolkit-photo" href="toolkit/matthew-headshot-2026.jpg" download><img src="assets/toolkit-headshot-2026.jpg" alt="Matthew Johnson in his 2026 headshot" loading="lazy" width="640" height="800" /><strong>2026 headshot ↓</strong><span>JPG · 1100 × 733 · 135 KB</span></a>
+          <a class="toolkit-photo" href="toolkit/matthew-johnson.jpg" download><img src="assets/toolkit-matthew-johnson.jpg" alt="Matthew Johnson in a casual portrait" loading="lazy" width="640" height="800" /><strong>Casual portrait ↓</strong><span>JPG · 1008 × 763 · 122 KB</span></a>
+          <a class="toolkit-photo" href="toolkit/matthew-headshot-2020.jpg" download><img src="assets/toolkit-headshot-2020.jpg" alt="Matthew Johnson in his 2020 headshot" loading="lazy" width="640" height="800" /><strong>2020 headshot ↓</strong><span>JPG · 3673 × 5142 · 10.5 MB</span></a>
+          <a class="toolkit-photo" href="toolkit/matthew-headshot-classic.jpg" download><img src="assets/toolkit-headshot-classic.jpg" alt="Matthew Johnson in a classic headshot" loading="lazy" width="640" height="800" /><strong>Classic headshot ↓</strong><span>JPG · 4000 × 6000 · 12 MB</span></a>
         </div>
       </div>
     </section>
@@ -739,7 +859,8 @@
         <p class="eyebrow">Start the conversation</p>
         <h2>Your people already know where the tension is.</h2>
         <p>Give them a clearer way to address it. Invite Matthew to speak, lead a workshop, or help your organization prepare for the conversation it cannot keep avoiding.</p>
-        <a class="button on-gold" href="mailto:info@nexphrase.org?subject=Speaking%20inquiry">Ask about availability <span>↗</span></a>
+        <a class="button on-gold" href="https://calendly.com/whatyousaynext" target="_blank" rel="noreferrer">Ask about availability <span>↗</span></a>
+        <p class="contact-email"><a href="mailto:info@nexphrase.org">info@nexphrase.org</a></p>
       </div>
     </section>
   </main>
@@ -752,7 +873,7 @@
         </span>
         <span class="brand-copy"><span class="brand-name">What You Say <em>Next?</em></span><span class="brand-tagline">Changes everything</span></span>
       </a>
-      <p>© 2026 Matthew Johnson. What you say next changes everything.</p>
+      <p>© 2026 NexPhrase, Inc. All rights reserved. What you say next changes everything.</p>
     </div>
   </footer>
 
