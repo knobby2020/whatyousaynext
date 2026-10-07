@@ -504,7 +504,8 @@
       .hero-nameplate { right: var(--gutter); bottom: 28px; }
       .hero-foot { display: none; }
       .split-a, .split-b, .proof .shell { grid-template-columns: minmax(0, 1fr); gap: clamp(26px, 5vw, 40px); }
-      .proof-label { text-align: center; }
+      .proof-label { text-align: center; text-wrap: balance; }
+      .proof-label br { display: none; }
       .intro-copy { padding-top: 0; max-width: 100%; }
       .credential-copy { max-width: 100%; }
       .topics-head > p { max-width: 100%; }
@@ -546,12 +547,33 @@
       .brand { --mark-size: 44px; --brand-type: 18px; gap: 8px; }
       .brand-tagline { display: none; }
       .menu { min-width: 48px; padding: 0 10px; font-size: 11px; letter-spacing: .08em; }
-      .hero { min-height: clamp(540px, 84svh, 700px); padding: calc(var(--header-h) + 30px) 0 44px; align-items: flex-end; }
-      .hero-copy { max-width: 100%; }
-      .hero-media { left: 0; width: 100%; object-position: center 12%; -webkit-mask-image: none; mask-image: none; }
-      .hero::before { background: linear-gradient(0deg, rgba(18,18,18,.98) 0%, rgba(18,18,18,.9) 52%, rgba(18,18,18,.34) 100%), linear-gradient(90deg, rgba(18,18,18,.8), transparent); }
+      .hero {
+        min-height: 0;
+        padding: 0 0 44px;
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
+        justify-content: flex-start;
+      }
+      .hero-media {
+        position: relative;
+        inset: auto;
+        width: 100%;
+        height: clamp(300px, 78vw, 380px);
+        object-fit: cover;
+        object-position: center 12%;
+        transform: none;
+        -webkit-mask-image: linear-gradient(to bottom, #000 0, #000 84%, transparent 100%);
+        mask-image: linear-gradient(to bottom, #000 0, #000 84%, transparent 100%);
+      }
+      .js-anim.motion-ready .hero-media { animation: none; transform: none; }
+      .hero::before {
+        inset: 0 0 auto 0;
+        height: 78px;
+        background: linear-gradient(to bottom, rgba(8,8,8,.9) 0%, rgba(8,8,8,.72) 68%, transparent 100%);
+      }
       .hero::after { display: none; }
-      .hero-copy { max-width: 100%; }
+      .hero-copy { max-width: 100%; padding-top: 4px; }
       .hero .eyebrow { align-items: flex-start; margin-bottom: 14px; font-size: 11px; line-height: 1.5; letter-spacing: .09em; }
       .hero .eyebrow::before { flex-basis: 20px; margin-top: 8px; }
       .hero-lede { margin: 20px 0 24px; max-width: 100%; font-size: 16px; line-height: 1.6; }
@@ -563,11 +585,18 @@
       .hero-nameplate { display: none; }
       .eyebrow-desktop { display: none; }
       .eyebrow-mobile { display: inline; }
-      .proof { padding: 26px 0; }
-      .logos { grid-template-columns: repeat(2, minmax(0, 1fr)); row-gap: 24px; column-gap: 18px; }
-      .logos img { max-height: 38px; }
+      .proof { padding: 28px 0 32px; }
+      .proof-label { max-width: 22em; margin-inline: auto; letter-spacing: .045em; line-height: 1.45; }
+      .logos { grid-template-columns: repeat(2, minmax(0, 1fr)); row-gap: 22px; column-gap: 16px; align-items: center; }
+      .logos img, .logos .icma-affiliation-logo { max-width: 100%; max-height: 42px; width: auto; height: auto; }
       .logos img:last-child { grid-column: auto; }
-      .eyebrow { font-size: 11px; letter-spacing: .12em; }
+      .eyebrow { font-size: 11px; letter-spacing: .07em; line-height: 1.35; text-wrap: balance; }
+      .credential-copy p.eyebrow { font-size: 11px; letter-spacing: .06em; line-height: 1.4; }
+      .events .section-head h2 { max-width: none; }
+      .book .button { letter-spacing: .02em; font-size: 12px; }
+      .book-point, .arc-lead, .resource small, .toolkit-photo span, .featured-publication-copy span, footer p { text-wrap: balance; }
+      .featured-publication-copy span { letter-spacing: .07em; }
+      .contact-email a { display: inline-flex; align-items: center; min-height: 44px; }
       .pull-quote { margin-top: 26px; padding: 18px 18px 18px 22px; }
       .pull-quote::before { top: -10px; left: 12px; font-size: 64px; }
       .pull-quote p { font-size: 25px; }
@@ -590,6 +619,7 @@
       .signup { grid-template-columns: minmax(0, 1fr); }
       .cta h2, .cta p { max-width: 100%; }
       footer .shell { flex-direction: column; text-align: center; gap: 20px; }
+      footer .brand { min-height: 44px; }
     }
 
     @media (max-width: 380px) {
@@ -652,7 +682,7 @@
 
     <aside class="proof" aria-label="Professional affiliations and service">
       <div class="shell">
-        <div class="proof-label">Professional affiliations<br />and public leadership service</div>
+        <div class="proof-label">Professional affiliations <br />and public leadership service</div>
         <div class="logos">
           <img class="icma-affiliation-logo" src="assets/ICMA-logo-name-horizontal-color.png" alt="International City/County Management Association" />
           <img src="assets/apa.jpg" alt="American Planning Association" />
